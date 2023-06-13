@@ -1,0 +1,1016 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.6 [en-gb]C-CCK-MCD NetscapeOnline.co.uk  (Win95; I) [Netscape]">
+   <title>Matrix/Array Functions</title>
+</head>
+<body background="backgrnd.gif">
+
+<h1>
+Working with Arrays and Matrices</h1>
+By default, the dimensions of the display grid are set to a single cell.
+Many people regularly use the calculator without ever being aware that
+it can support matrices, or more generally, <i>arrays</i> of numbers.&nbsp;
+And many fields of problems probably do not require this feature.&nbsp;&nbsp;
+But if you need to do matrix or vector arithmetic, solve sets of simultaneous
+equations, work with complex numbers, convert between co-ordinate systems,
+you will need to use this powerful feature.&nbsp;&nbsp; <b>Please note
+that if you are using a handheld computer with a version of WindowsCE prior
+to 3.0 (generally the older devices) the matrix functions will not be available.</b>
+<p><img SRC="optmatrx.gif" height=293 width=348>
+<p>The dimensions of the display grid can be set using the Matrix tab of
+the Options dialog. When the dimensions are greater than 1x1, additional
+functions become available as described below when the <b>shift</b> button
+is depressed. Some functions are dependent on certain restrictions on dimensions
+for them to be available.&nbsp;&nbsp; If the I dimension is set to exactly
+two, you can check the "Complex" box to use <a href="complex.htm">complex
+numbers</a>.
+<p>It may be necessary to enlarge the display by changing the size of the
+calculator window in order to see the grid of values.&nbsp; On WindowsCE
+(e.g. Pocket PC) you will not be able to enlarge the whole calculator,
+but you can make more display area available by reducing the size of the
+buttons, and possibly discarding the fifth row of function buttons.&nbsp;&nbsp;
+You may also need to experiment with the font sizes for both the buttons
+and the display.&nbsp; You can also reduce the level of precision to make
+it possible to use narrower columns. Once you have selected array mode,
+the display in some ways resembles a spreadsheet program such as Excel.
+<br>&nbsp;
+<h2>
+Displaying Arrays and Matrices</h2>
+When using arrays of numbers (see the section on the <a href="modes.htm">Mode</a>
+dialog tab), the display is divided into a number of array cells on a grid.
+The colour of this grid is set by the bottom of the three colour wells.
+<p><img SRC="matrix.gif" height=383 width=456>
+<p>The dimensions (in pixels) of each grid cell is defined by the Array
+Cells Width and Height edit boxes.
+<p>The axes are drawn using the font specified using the Font dialog obtained
+by pressing the <b>Axis Font</b> button. The axis background is set using
+the middle of the three colour wells.
+<h2>
+Simple arithmetic with arrays</h2>
+When you first enter array mode you will see that all the array cells are
+selected and that if you do a simple calculation it will be simply repeated
+in each cell.&nbsp; This is how simple array arithmetic works, applying
+each operation to all of the cells, and clearly this alone is not particularly
+useful.&nbsp; But in array mode a number of buttons have new or enhanced
+functions.&nbsp;&nbsp; For example, pressing the "rand" button now produces
+an array of random numbers (make sure you are in decimal mode).
+<p>In the examples below we assume you are using algebraic logic.&nbsp;
+If you are using RPN you need to enter the values onto the stack and use
+the post entry operators in the normal way.
+<h3>
+<img SRC="buttons/ind.gif" ALT="ind" height=23 width=33> - Index</h3>
+If you click the shift button the "rand" button becomes "ind", which gives
+each cell the value of its own index.&nbsp; Now we can do something mildly
+useful: select decimal, degree mode and make the array size 10 x 9. Click
+on "<b>ind</b>" (SHIFT + <b>rand</b>). Click "<b>+</b>" then "<b>1</b>"
+(notice how all cells are filled with 1). Click "<b>=</b>". All cells now
+have the value of their own index plus one, i.e. values from 1 to 90. Now
+click the "<b>sin</b>" button and you have an instant table of the sines
+of whole degree angles.&nbsp; If the results look odd, check that you remembered
+to set the angle mode to degrees.
+<p>Let's suppose you want to repeat this operation with other trigonometric
+functions, square root, etc., but you don't want to have to compute the
+index + 1 every time.&nbsp; Simply save the intermediate result to memory
+using the "<b>Min</b>" button.&nbsp; All the memories work in array mode,
+(although only the value of the first array element is visible in the dialog
+when selecting the memory).
+<h2>
+Selecting cells and ranges of cells</h2>
+Initially, all the cells are selected, but you can also select an individual
+cell by clicking on it with the mouse or with the stylus on a WindowsCE
+device.&nbsp;&nbsp; When you select a cell, the remaining cells are dimmed.&nbsp;&nbsp;
+It feels quite natural to use the stylus in this way.&nbsp; You can also
+select a rectangular group of cells by pressing the left mouse button on
+one cell and releasing it after moving to another (on pen computers you
+press the stylus on a cell and move the stylus across the display surface
+and then release from another cell).&nbsp;&nbsp; Alternatively you can
+select a single cell and then SHIFT+select another cell to indicate a range
+of cells.&nbsp; You can scroll the display before the second of these operations,
+making it possible to select a range of cells even if it is not possible
+to view them all on the display at the same time.
+<p>Finally, you can use the keyboard (or virtual keyboard) cursor control
+keys (arrow keys) to move the selection around.&nbsp;&nbsp; This works
+in any mode except the "Time" mode, when the arrow keys control the stopwatch.&nbsp;
+The HOME and END keys on the keyboard will select the very first or last
+cells of the grid.&nbsp; If a range of cells are selected, the whole range
+moves around the grid as you use the cursor keys. The "<b>next</b>" button
+on the main keypad can also be used to advance a single cell at a time.
+The keyboard INSERT (or INS) key does the same thing. This is useful if
+you want to enter all the values in a matrix in turn.
+<p>You can select all the cells by clicking outside the grid if the display
+area is larger than the grid, or using one of the techniques above.&nbsp;
+If the grid is too big for the display you will get scroll bars to move
+the grid and the area outside the grid will not be visible, but there is
+a small button where the two scroll bars meet which can be used to select
+all the cells.&nbsp; There is also a "Select All" option in the <a href="menubar.htm">Edit
+menu</a>. Clicking on "<b>AC</b>" also selects all cells as well as deleting
+the contents.
+<p>Once you have selected a single cell or a group of cells, all subsequent
+arithmetic operations act on those cells only. Selecting an individual
+cell allows you to make complete calculations on that one cell alone.&nbsp;
+You can then move to another cell or include it in a larger group of cells
+and do further calculations.&nbsp; Example: you want a table of numbers
+and their square roots up to 10. First set the array dimensions to 2 x
+11. Select all the cells in the first column and click on "<b>ind</b>"
+(shift "<b>rand</b>").&nbsp; Select the second column and index it in the
+same way.&nbsp; With the second column still selected click on the square
+root button.
+<br>&nbsp;
+<h2>
+Using copy and paste</h2>
+The copy button (or Ctrl-C on the keyboard) can be used to copy the contents
+of the selected cell or cells into the clipboard. You can then select a
+<i>single
+cell</i> and use the paste button (or Ctrl-V on the keyboard) to copy the
+data back starting at the location of the cell.&nbsp; If the dimensions
+of the group of cells copied is too large for the array size specified
+the extra data is discarded.&nbsp; If you make a selection of a group of
+cells and then use paste, only the selected cells are updated from the
+clipboard, even if the clipboard data contains a larger selection.&nbsp;
+If the clipboard data contains a smaller group of cells than the selection
+the cells beyond the range of the clipboard data are left unchanged.
+<p>Copying data to the clipboard also makes the data available to other
+applications such as a word processor or spreadsheet.&nbsp; The same process
+can be used in reverse to import data from other applications.&nbsp; Example:
+using the example above, make sure all the cells are selected and click
+on the copy button.&nbsp; Run a spreadsheet program such as Excel (or Pocket
+Excel on a handheld device), select a cell and select Paste from the Edit
+menu.&nbsp; The data are now pasted into the worksheet and can be further
+processed, printed or incorporated into another spreadsheet. You can do
+the same process in reverse, copying data to the clipboard within another
+application and then pasting it into the array in the calculator.
+<p>You can use cut and paste within the calculator application as a convenient
+way of copying or moving blocks of data within an array, or storing for
+a later calculation.&nbsp; Because the clipboard only allows you to store
+one set of data at a time, you may need to make use of the memories for
+more complex calculations.&nbsp; You should also bear in mind that data
+is saved to the clipboard as text in whatever display format is currently
+selected.&nbsp; This means that if you are only using a small number of
+decimal places there could be a loss of precision compared with, say, using
+the memory.&nbsp; It also means that if you store data in the clipboard
+in, hexadecimal mode, for example, and then switch to decimal mode, the
+clipboard will still contain data in hexadecimal which will be interpreted
+as decimal.&nbsp; This will probably not give the desired result.
+<br>&nbsp;
+<h2>
+Matrix arithmetic</h2>
+Matrix arithmetic has special rules.&nbsp; Matrix addition and subtraction
+are conveniently defined as the sum or difference of the individual elements
+and this is the same as the simple array arithmetic operation described
+above, which therefore needs no further work on our part.
+<p>Example: add the matrices
+<p><nobr>( 1&nbsp; 2 )&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ( 0&nbsp; 4 )</nobr>
+<br><nobr>( 3&nbsp; 4 )&nbsp; +&nbsp; ( 6&nbsp; 2 )</nobr>
+<p>Set the array size to 2 x 2.&nbsp; Select the first cell using the mouse/stylus
+or the HOME key on your keyboard.&nbsp; Press the "<b>1</b>" button, followed
+by the "<b>next</b>" button (or the INS key).&nbsp; This enters one into
+the first cell and moves to the next available cell.&nbsp;&nbsp; Enter
+"<b>2</b>" then "<b>next</b>" which automatically goes to the next row.&nbsp;
+Enter 3 and 4 in the same way.&nbsp; The final "<b>next</b>" selects all
+the cells (remember that if a single cell is selected for the arithmetic
+operation, it only acts on that one cell).&nbsp;&nbsp; Now click the "<b>+</b>"
+button (if you are using RPN you will use Enter and "<b>+</b>" at the next
+step).&nbsp; You enter the second matrix in the same way as the first,
+"<b>0</b>", "<b>next</b>", "<b>4</b>", "<b>next</b>" and so on.&nbsp; Again
+click "<b>next</b>" a final time to select all the cells ready for the
+arithmetic operation.&nbsp;&nbsp; Then click on the "<b>=</b>" button for
+the result:
+<p><nobr>( 1&nbsp; 6 )</nobr>
+<br><nobr>( 9&nbsp; 6 )</nobr>
+<br>&nbsp;
+<h3>
+Multiplying a matrix by a scalar</h3>
+A matrix can be multiplied by a scalar very easily by entering the matrix
+and then making sure all the elements are selected. Now clicking the&nbsp;<img SRC="buttons/multiply.gif" height=30 width=40>
+button followed by a value (which will appear in all cells) and then "<b>=</b>"
+will give the product.
+<h3>
+<img SRC="buttons/matmult.gif" ALT="matrix product" height=30 width=40>
+- Matrix product</h3>
+The rules for multiplication are more complicated.&nbsp; If we simply use
+the multiplication button in the same way as the plus button above we will
+carry out a scalar multiplication of the individual cells.&nbsp; Sometimes
+we want to do this, but for matrix multiplication we need to use the appropriate
+operator which is obtained by clicking the "<b>shift</b>" button, when
+the "<b>X</b>" changes to "<b>)(</b>", the matrix multiplication operator.
+<p>Example: find the matrix product of the two square matrices
+<p><nobr>( 1&nbsp; 2 )&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ( 0&nbsp; 4 )</nobr>
+<br><nobr>(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; )&nbsp; x&nbsp; (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+)</nobr>
+<br><nobr>( 3&nbsp; 4 )&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ( 6&nbsp; 2 )</nobr>
+<p><nobr>Result:</nobr>
+<p><nobr>( 12&nbsp;&nbsp;&nbsp; 8 )</nobr>
+<br><nobr>(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+)</nobr>
+<br><nobr>( 24&nbsp; 20 )</nobr>
+<p>Two matrices may only be multiplied if the number of columns of the
+first equals the number of rows of the second.&nbsp; If this is the case
+the matrices are said to be conformable.&nbsp; When we enter non-square
+matrices we simply ensure that the grid has at least as many rows and columns
+as the largest matrix.&nbsp;&nbsp; Then we simply leave all the unused
+elements as zero.&nbsp; The arithmetic deals with conformance, because
+any non-conforming rows or columns will be multiplied by zero.
+<p><nobr>Example of multiplying non-square matrices:</nobr>
+<p><nobr>( 1&nbsp; 2&nbsp; 5&nbsp; 1&nbsp; 0 )&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+( 0&nbsp; 4 )</nobr>
+<br><nobr>(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+)&nbsp;&nbsp;&nbsp; x&nbsp;&nbsp;&nbsp; (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+)</nobr>
+<br><nobr>( 3&nbsp; 4&nbsp; 1&nbsp; 3&nbsp; 1 )&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+( 6&nbsp; 2 )</nobr>
+<br>(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+)
+<br><nobr>( 2&nbsp; 0&nbsp; 1&nbsp; 6&nbsp; 2 )&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+( 1&nbsp; 4 )</nobr>
+<br><nobr>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; )</nobr>
+<br><nobr>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+( 3&nbsp;&nbsp; 8 )</nobr>
+<br><nobr>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; )</nobr>
+<br><nobr>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+( 1&nbsp;&nbsp; 7 )</nobr>
+<p><nobr>Make sure the grid dimensions are at least 5 x 5 and enter the
+first matrix:</nobr>
+<br>&nbsp;
+<table BORDER COLS=6 WIDTH="473" HEIGHT="30" BGCOLOR="#000099" >
+<tr ALIGN=CENTER BGCOLOR="#008080">
+<td>&nbsp;</td>
+
+<td><font color="#000000">1</font></td>
+
+<td>2</td>
+
+<td>3</td>
+
+<td>4</td>
+
+<td>5</td>
+</tr>
+
+<tr>
+<td ALIGN=CENTER BGCOLOR="#008080"><font color="#000000">1</font></td>
+
+<td><b><font color="#66FFFF">1</font></b></td>
+
+<td><b><font color="#66FFFF">2</font></b></td>
+
+<td><b><font color="#66FFFF">5</font></b></td>
+
+<td><b><font color="#66FFFF">1</font></b></td>
+
+<td><b><font color="#66FFFF">0</font></b></td>
+</tr>
+
+<tr>
+<td ALIGN=CENTER BGCOLOR="#008080"><font color="#000000">2</font></td>
+
+<td><b><font color="#66FFFF">3</font></b></td>
+
+<td><b><font color="#66FFFF">4</font></b></td>
+
+<td><b><font color="#66FFFF">1</font></b></td>
+
+<td><b><font color="#66FFFF">3</font></b></td>
+
+<td><b><font color="#66FFFF">1</font></b></td>
+</tr>
+
+<tr>
+<td ALIGN=CENTER BGCOLOR="#008080">3</td>
+
+<td><b><font color="#66FFFF">2</font></b></td>
+
+<td><b><font color="#66FFFF">0</font></b></td>
+
+<td><b><font color="#66FFFF">1</font></b></td>
+
+<td><b><font color="#66FFFF">6</font></b></td>
+
+<td><b><font color="#66FFFF">2</font></b></td>
+</tr>
+
+<tr>
+<td ALIGN=CENTER BGCOLOR="#008080"><font color="#000000">4</font></td>
+
+<td><b><font color="#66FFFF">0</font></b></td>
+
+<td><b><font color="#66FFFF">0</font></b></td>
+
+<td><b><font color="#66FFFF">0</font></b></td>
+
+<td><b><font color="#66FFFF">0</font></b></td>
+
+<td><b><font color="#66FFFF">0</font></b></td>
+</tr>
+
+<tr>
+<td ALIGN=CENTER BGCOLOR="#008080">5</td>
+
+<td><b><font color="#66FFFF">0</font></b></td>
+
+<td><b><font color="#66FFFF">0</font></b></td>
+
+<td><b><font color="#66FFFF">0</font></b></td>
+
+<td><b><font color="#66FFFF">0</font></b></td>
+
+<td><b><font color="#66FFFF">0</font></b></td>
+</tr>
+</table>
+
+<p><nobr>&nbsp;&nbsp; Use the matrix multiplication operator,&nbsp;<img SRC="buttons/matmult.gif" BORDER=0 height=30 width=40>,
+then enter the second matrix..</nobr>
+<br>&nbsp;
+<br>&nbsp;
+<table BORDER COLS=6 WIDTH="473" HEIGHT="30" BGCOLOR="#000099" >
+<tr ALIGN=CENTER BGCOLOR="#008080">
+<td>&nbsp;</td>
+
+<td><font color="#000000">1</font></td>
+
+<td>2</td>
+
+<td>3</td>
+
+<td>4</td>
+
+<td>5</td>
+</tr>
+
+<tr>
+<td ALIGN=CENTER BGCOLOR="#008080"><font color="#000000">1</font></td>
+
+<td><b><font color="#66FFFF">0</font></b></td>
+
+<td><b><font color="#66FFFF">4</font></b></td>
+
+<td><b><font color="#66FFFF">0</font></b></td>
+
+<td><b><font color="#66FFFF">0</font></b></td>
+
+<td><b><font color="#66FFFF">0</font></b></td>
+</tr>
+
+<tr>
+<td ALIGN=CENTER BGCOLOR="#008080"><font color="#000000">2</font></td>
+
+<td><b><font color="#66FFFF">6</font></b></td>
+
+<td><b><font color="#66FFFF">2</font></b></td>
+
+<td><b><font color="#66FFFF">0</font></b></td>
+
+<td><b><font color="#66FFFF">0</font></b></td>
+
+<td><b><font color="#66FFFF">0</font></b></td>
+</tr>
+
+<tr>
+<td ALIGN=CENTER BGCOLOR="#008080">3</td>
+
+<td><b><font color="#66FFFF">1</font></b></td>
+
+<td><b><font color="#66FFFF">4</font></b></td>
+
+<td><b><font color="#66FFFF">0</font></b></td>
+
+<td><b><font color="#66FFFF">0</font></b></td>
+
+<td><b><font color="#66FFFF">0</font></b></td>
+</tr>
+
+<tr>
+<td ALIGN=CENTER BGCOLOR="#008080"><font color="#000000">4</font></td>
+
+<td><b><font color="#66FFFF">3</font></b></td>
+
+<td><b><font color="#66FFFF">8</font></b></td>
+
+<td><b><font color="#66FFFF">0</font></b></td>
+
+<td><b><font color="#66FFFF">0</font></b></td>
+
+<td><b><font color="#66FFFF">0</font></b></td>
+</tr>
+
+<tr>
+<td ALIGN=CENTER BGCOLOR="#008080">5</td>
+
+<td><b><font color="#66FFFF">1</font></b></td>
+
+<td><b><font color="#66FFFF">7</font></b></td>
+
+<td><b><font color="#66FFFF">0</font></b></td>
+
+<td><b><font color="#66FFFF">0</font></b></td>
+
+<td><b><font color="#66FFFF">0</font></b></td>
+</tr>
+</table>
+
+<p><img SRC="buttons/equals.gif" height=30 width=40>
+<p><nobr>Result, a 3 x 2 matrix:</nobr>
+<p><nobr>( 20&nbsp; 36 )</nobr>
+<br><nobr>(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+)</nobr>
+<br><nobr>( 35&nbsp; 55 )</nobr>
+<br><nobr>(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+)</nobr>
+<br><nobr>( 21&nbsp; 74 )</nobr>
+<br>&nbsp;
+<br>&nbsp;
+<table BORDER COLS=6 WIDTH="473" HEIGHT="30" BGCOLOR="#000099" >
+<tr ALIGN=CENTER BGCOLOR="#008080">
+<td>&nbsp;</td>
+
+<td><font color="#000000">1</font></td>
+
+<td>2</td>
+
+<td>3</td>
+
+<td>4</td>
+
+<td>5</td>
+</tr>
+
+<tr>
+<td ALIGN=CENTER BGCOLOR="#008080"><font color="#000000">1</font></td>
+
+<td><b><font color="#66FFFF">20</font></b></td>
+
+<td><b><font color="#66FFFF">36</font></b></td>
+
+<td><b><font color="#66FFFF">0</font></b></td>
+
+<td><b><font color="#66FFFF">0</font></b></td>
+
+<td><b><font color="#66FFFF">0</font></b></td>
+</tr>
+
+<tr>
+<td ALIGN=CENTER BGCOLOR="#008080"><font color="#000000">2</font></td>
+
+<td><b><font color="#66FFFF">35</font></b></td>
+
+<td><b><font color="#66FFFF">55</font></b></td>
+
+<td><b><font color="#66FFFF">0</font></b></td>
+
+<td><b><font color="#66FFFF">0</font></b></td>
+
+<td><b><font color="#66FFFF">0</font></b></td>
+</tr>
+
+<tr>
+<td ALIGN=CENTER BGCOLOR="#008080">3</td>
+
+<td><b><font color="#66FFFF">21</font></b></td>
+
+<td><b><font color="#66FFFF">74</font></b></td>
+
+<td><b><font color="#66FFFF">0</font></b></td>
+
+<td><b><font color="#66FFFF">0</font></b></td>
+
+<td><b><font color="#66FFFF">0</font></b></td>
+</tr>
+
+<tr>
+<td ALIGN=CENTER BGCOLOR="#008080"><font color="#000000">4</font></td>
+
+<td><b><font color="#66FFFF">0</font></b></td>
+
+<td><b><font color="#66FFFF">0</font></b></td>
+
+<td><b><font color="#66FFFF">0</font></b></td>
+
+<td><b><font color="#66FFFF">0</font></b></td>
+
+<td><b><font color="#66FFFF">0</font></b></td>
+</tr>
+
+<tr>
+<td ALIGN=CENTER BGCOLOR="#008080">5</td>
+
+<td><b><font color="#66FFFF">0</font></b></td>
+
+<td><b><font color="#66FFFF">0</font></b></td>
+
+<td><b><font color="#66FFFF">0</font></b></td>
+
+<td><b><font color="#66FFFF">0</font></b></td>
+
+<td><b><font color="#66FFFF">0</font></b></td>
+</tr>
+</table>
+
+<br>&nbsp;
+<h3>
+<img SRC="buttons/matdivid.gif" ALT="matrix division" height=30 width=40>
+- Matrix division</h3>
+For completeness, we have included a matrix division function which is
+the equivalent to pre multiplying the numerator matrix by the inverse of
+the denominator.
+<p>Example: evaluate the following matrix expression
+<p><nobr>( 1&nbsp; 2 )</nobr>
+<br><nobr>(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; )</nobr>
+<br><nobr>( 3&nbsp; 4 )</nobr>
+<br><nobr>-------</nobr>
+<br><nobr>( 0&nbsp; 4 )</nobr>
+<br><nobr>(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; )</nobr>
+<br><nobr>( 6&nbsp; 2 )</nobr>
+<p><nobr>Result (to 5 d.p.):</nobr>
+<p><nobr>(&nbsp; 0.41667&nbsp;&nbsp; 0.5&nbsp; )</nobr>
+<br><nobr>(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+)</nobr>
+<br><nobr>(&nbsp; 0.25&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.5&nbsp; )</nobr>
+<p>Check:
+<p><nobr>(&nbsp; 0&nbsp;&nbsp; 4&nbsp; )&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(&nbsp; 0.41667&nbsp;&nbsp; 0.5&nbsp;&nbsp; )&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(&nbsp; 1&nbsp;&nbsp; 2&nbsp; )</nobr>
+<br><nobr>(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+)&nbsp;&nbsp; x&nbsp;&nbsp; (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+)&nbsp;&nbsp;&nbsp; =&nbsp;&nbsp;&nbsp; (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+)</nobr>
+<br><nobr>(&nbsp; 6&nbsp;&nbsp; 2&nbsp; )&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(&nbsp; 0.25&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.5&nbsp;&nbsp;
+)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (&nbsp; 3&nbsp;&nbsp;
+4&nbsp; )</nobr>
+<p>Note that matrix multiplication is not commutative, so that the order
+of multiplication is significant.
+<br>&nbsp;
+<h3>
+Solving a set of linear equations.</h3>
+The matrix division function gives us an intuitive and easily remembered
+way of solving a set of linear equations by simply dividing a matrix containing
+the constants by the coefficient matrix.
+<p>Example:
+<p>Given the set of linear equations:
+<p>&nbsp; 10x&nbsp; +&nbsp;&nbsp; 2y&nbsp; -&nbsp; 10z&nbsp;&nbsp; =&nbsp;
+16&nbsp;&nbsp;&nbsp; )
+<br>-10x&nbsp;&nbsp; +&nbsp; 5y&nbsp; + 12z&nbsp;&nbsp;&nbsp; =&nbsp; 7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+)
+<br>&nbsp;&nbsp; 4x&nbsp;&nbsp; +&nbsp; 6y&nbsp; +&nbsp; 10z&nbsp;&nbsp;
+=&nbsp; 36&nbsp;&nbsp;&nbsp; )
+<p>This can be rewritten as a matrix expression:
+<p>(&nbsp; 10&nbsp;&nbsp; 2&nbsp; -10&nbsp;&nbsp; )&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+( x )&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (&nbsp; 16&nbsp; )
+<br>( -10&nbsp;&nbsp; 5&nbsp;&nbsp; 12&nbsp;&nbsp; )&nbsp;&nbsp; x&nbsp;
+( y )&nbsp;&nbsp; =&nbsp; (&nbsp; 7&nbsp; )
+<br>(&nbsp;&nbsp;&nbsp; 4&nbsp;&nbsp;&nbsp; 6&nbsp;&nbsp; 10&nbsp;&nbsp;
+)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ( z )&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(&nbsp; 36&nbsp; )
+<p>To solve for (x y z) we do the equivalent of&nbsp; "dividing" both sides
+by the coefficient matrix, so that:
+<p>( x )&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (&nbsp; 16&nbsp; )&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(&nbsp; 10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2&nbsp;&nbsp; -10&nbsp;&nbsp;
+)
+<br>( y )&nbsp;&nbsp; =&nbsp;&nbsp; (&nbsp; 7&nbsp;&nbsp;&nbsp; )&nbsp;&nbsp;&nbsp;
+/&nbsp;&nbsp;&nbsp; ( -10&nbsp;&nbsp;&nbsp;&nbsp; 5&nbsp;&nbsp;&nbsp;&nbsp;
+12&nbsp;&nbsp; )
+<br>( z )&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (&nbsp; 36&nbsp;
+)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (&nbsp;&nbsp;&nbsp; 4&nbsp;&nbsp;&nbsp;&nbsp;
+6&nbsp;&nbsp;&nbsp;&nbsp; 10&nbsp;&nbsp; )
+<p>(in reality we will be pre-multiplying by the inverse).
+<p>First set the matrix dimensions to 3 x 3 and enter the constants as
+a 3 x 1 column matrix (just leave the other elements as zero):
+<br>&nbsp;
+<table BORDER COLS=3 WIDTH="473" HEIGHT="30" BGCOLOR="#000099" >
+<tr ALIGN=CENTER BGCOLOR="#008080">
+<td><b><font color="#000000">1</font></b></td>
+
+<td><b>2</b></td>
+
+<td><b>3</b></td>
+</tr>
+
+<tr>
+<td><b><font color="#66FFFF">16</font></b></td>
+
+<td><b><font color="#66FFFF">0.</font></b></td>
+
+<td><b><font color="#66FFFF">0.</font></b></td>
+</tr>
+
+<tr>
+<td><b><font color="#66FFFF">7</font></b></td>
+
+<td><b><font color="#66FFFF">0.</font></b></td>
+
+<td><b><font color="#66FFFF">0.</font></b></td>
+</tr>
+
+<tr>
+<td><b><font color="#66FFFF">36</font></b></td>
+
+<td><b><font color="#66FFFF">0.</font></b></td>
+
+<td><b><font color="#66FFFF">0.</font></b></td>
+</tr>
+</table>
+
+<p>Making sure all the cells are selected, we click on the <b>shift</b>
+then the <b>divide</b> button (which will be showing "<b>)/(</b>").
+<br>Next we enter the coefficient matrix as a 3 x 3 matrix .
+<br>&nbsp;
+<table BORDER COLS=3 WIDTH="473" HEIGHT="30" BGCOLOR="#000099" >
+<tr ALIGN=CENTER BGCOLOR="#008080">
+<td><b><font color="#000000">1</font></b></td>
+
+<td><b>2</b></td>
+
+<td><b>3</b></td>
+</tr>
+
+<tr>
+<td><b><font color="#66FFFF">10</font></b></td>
+
+<td><b><font color="#66FFFF">2</font></b></td>
+
+<td><b><font color="#66FFFF">-10</font></b></td>
+</tr>
+
+<tr>
+<td><b><font color="#66FFFF">-10</font></b></td>
+
+<td><b><font color="#66FFFF">5</font></b></td>
+
+<td><b><font color="#66FFFF">12</font></b></td>
+</tr>
+
+<tr>
+<td><b><font color="#66FFFF">4</font></b></td>
+
+<td><b><font color="#66FFFF">6</font></b></td>
+
+<td><b><font color="#66FFFF">10</font></b></td>
+</tr>
+</table>
+
+<p>Finally we press the "<b>=</b>" button to get the resulting values for
+x, y and z as another 3 x 1 matrix:
+<br>&nbsp;
+<table BORDER COLS=3 WIDTH="473" HEIGHT="30" BGCOLOR="#000099" >
+<tr ALIGN=CENTER BGCOLOR="#008080">
+<td><b><font color="#000000">1</font></b></td>
+
+<td><b>2</b></td>
+
+<td><b>3</b></td>
+</tr>
+
+<tr>
+<td><b><font color="#66FFFF">3</font></b></td>
+
+<td><b><font color="#66FFFF">0.</font></b></td>
+
+<td><b><font color="#66FFFF">0.</font></b></td>
+</tr>
+
+<tr>
+<td><b><font color="#66FFFF">2</font></b></td>
+
+<td><b><font color="#66FFFF">0.</font></b></td>
+
+<td><b><font color="#66FFFF">0.</font></b></td>
+</tr>
+
+<tr>
+<td><b><font color="#66FFFF">1</font></b></td>
+
+<td><b><font color="#66FFFF">0.</font></b></td>
+
+<td><b><font color="#66FFFF">0.</font></b></td>
+</tr>
+</table>
+
+<p>which gives us the solution x = 3, y = 2, z = 1.
+<p>In practice, it is probably a good idea to enter the coefficient matrix
+first and save it in memory ready for use, because it is time consuming
+to enter.&nbsp; You can also use one of the other memories for the constants.&nbsp;
+This allows you to go back and correct errors without re-entering the whole
+thing.&nbsp; Be careful when entering negative numbers to use the sign
+change key "+/-" and not the minus key, which will evaluate the expression
+using the numbers you entered so far!
+<p>Erroneous results can be produced where the set of equations is very
+"stiff" or has no unique solution, and rounding errors may lead to inaccurate
+results, if a result is produced at all.&nbsp; In these cases you will
+need to use more sophisticated numerical techniques than those currently
+provided by the built-in functions.
+<h3>
+<img SRC="buttons/T.gif" ALT="T" height=23 width=33> - Transpose</h3>
+The <b>T</b> button computes the transpose of a matrix.&nbsp; If the matrix
+is not square, the largest contained matrix is transposed, while the elements
+outside the square are left unchanged.
+<br>&nbsp;
+<h3>
+<img SRC="buttons/inverse.gif" ALT="inv" height=23 width=33> - Inverse</h3>
+Use this button (obtained by <b>shift</b> and the <b>1/x</b> button) to
+invert a matrix.&nbsp; Depending on the values of the elements, it may
+not be possible to obtain the inverse, in which case you will get an overflow
+error.&nbsp; An example is the inverse of the zero (null) matrix, which
+is equivalent to taking the reciprocal of zero in scalar arithmetic.
+<p>The inverse can be used as a way of solving a set of linear equations,
+although there are more efficient numerical methods.&nbsp; See the matrix
+division example above.
+<br>&nbsp;
+<h3>
+<img SRC="buttons/det.gif" ALT="det" height=23 width=33> - Determinant</h3>
+This computes the determinant of a matrix, and is found by using <b>shift</b>
+with the "<b>&lt;</b>" (backspace) button.&nbsp; The result is given in
+the form of a scalar matrix, i.e. each of the diagonal elements contains
+the computed determinant.
+<br>&nbsp;
+<h3>
+<img SRC="buttons/I.gif" ALT="I" height=23 width=33> - Unit matrix</h3>
+The unit button generates a unit matrix, i.e. a matrix with zero elements
+except for the diagonal elements which are one.&nbsp; It is obtained by
+clicking on shift, when the <b>unit</b> button changes to <b>I</b>.&nbsp;
+You can use the unit matrix to generate other diagonal matrices.&nbsp;
+For example multiply the unit matrix by a constant, or use a simple scalar
+multiplication by the unit matrix to obtain the diagonal elements of a
+given matrix.
+<h2>
+Working with vectors</h2>
+If the number if I-direction cells is set to exactly 2 or 3 some additional
+vector functions are available.
+<h3>
+<img SRC="buttons/dotprod.gif" ALT=").(" height=23 width=33> - Scalar Product</h3>
+This button computes the scalar (dot) product of two vectors.&nbsp; The
+result is a scalar value, which is represented as its product with the
+unit matrix.
+<h3>
+<img SRC="buttons/crosprod.gif" ALT=")x(" height=23 width=33> - Vector
+Product</h3>
+This button computes the vector (cross) product of two vectors.
+<h3>
+<img SRC="buttons/RtoP.gif" ALT="RtoP" height=30 width=40> - Rectangular
+to Polar</h3>
+Converts from rectangular (cartesian) to polar coordinates.&nbsp; Use&nbsp;<img SRC="buttons/shift.gif" ALT="shift" height=23 width=33>
+and the&nbsp;<img SRC="buttons/plus.gif" ALT="+" height=30 width=40> button.
+<br>Example: Set number of I cells to 2, J cells to 1.&nbsp; Angle mode
+is <i>degrees</i>.&nbsp; Enter the value 1.0 into both cells to give the
+(x, y) coordinates.:
+<br>&nbsp;
+<table BORDER COLS=2 WIDTH="310" HEIGHT="30" BGCOLOR="#000099" >
+<tr>
+<td><b><font color="#66FFFF">1.</font></b></td>
+
+<td><b><font color="#66FFFF">1.</font></b></td>
+</tr>
+</table>
+
+<p>Now:&nbsp;<img SRC="buttons/shift.gif" ALT="shift" BORDER=0 height=23 width=33>&nbsp;<img SRC="buttons/RtoP.gif" ALT="RtoP" height=30 width=40>
+, result:
+<br>&nbsp;
+<table BORDER COLS=2 WIDTH="310" HEIGHT="30" BGCOLOR="#000099" >
+<tr>
+<td><b><font color="#66FFFF">1.4142135624</font></b></td>
+
+<td><b><font color="#66FFFF">45.</font></b></td>
+</tr>
+</table>
+
+<p>The result is in (r, theta) coordinates, where 1.4142... is the square
+root of 2 and the angle, theta, is 45 degrees.
+<p>If the number of I cells is set to 3, the rectangular coordinates are
+given as (x, y, z) and the result is expressed in cylindrical polar coordinates
+(r, theta, z).
+<h3>
+<img SRC="buttons/PtoR.gif" ALT="PtoR" height=30 width=40> - Polar to Rectangular</h3>
+Converts from polar to rectangular (cartesian) coordinates.&nbsp; Use&nbsp;<img SRC="buttons/shift.gif" ALT="shift" height=23 width=33>
+and the&nbsp;<img SRC="buttons/minus.gif" ALT="-" height=30 width=40> button.&nbsp;
+Take care that the angle, theta, is entered in the correct units depending
+on the current angle mode.
+<br>&nbsp;
+<br>&nbsp;
+<h2>
+Sample Problems</h2>
+
+<!--
+<h3>
+Resistor Network</h3>
+Problem: use Kirchoff's laws to find the unknown currents I<sub>1</sub>,
+I<sub>2 </sub>and I<sub>3 </sub>in the circuit shown below:
+<p>to be added....
+<br>&nbsp;
+-->
+<h3>
+Traffic Flow</h3>
+A proposal for a one-way system is being considered for Matrix Square.&nbsp;&nbsp;
+The existing traffic flows as shown have already been measured.&nbsp; Assuming
+no change to the external traffic flows, find the flow of cars per hour
+through Acacia Street (A), Bond Road (B), Cornish Drive (C) and Durham
+Avenue (D) given the measured traffic flows in the adjacent roads.
+<p><img SRC="matrixsq.gif" height=200 width=300>
+<p>At a first glance it seems insoluble.&nbsp; First, for there to be a
+solution, the boundary conditions must add up.&nbsp; We can check that
+the incoming traffic balances the outgoing traffic by noting that 800 cars
+per hour enter the square, and 800 cars per hour leave it.&nbsp; Good.
+<p>Now we need to collect the information we have available.&nbsp; Starting
+with the junction entering Acacia Street, the net traffic flow per hour
+consists of 200 cars entering the junction, 350 leaving plus whatever comes
+through Durham Avenue less the traffic out through Acacia Street, so:
+<p>200 - 350&nbsp; + D - A = 0, or -A + D&nbsp; = 150
+<p>Looking at the other junctions in the same way:
+<p>A - B = 100
+<p>B - C = -50
+<p>C - D = -200
+<p>In matrix form:
+<p>( -1&nbsp;&nbsp; 0&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp; 1&nbsp; )&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(&nbsp; A&nbsp; )&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (&nbsp; 150&nbsp;
+)
+<br>(&nbsp; 1&nbsp; -1&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp; 0&nbsp; )&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(&nbsp; B&nbsp; )&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (&nbsp; 100&nbsp;
+)
+<br>(&nbsp; 0&nbsp;&nbsp; 1&nbsp; -1&nbsp;&nbsp;&nbsp; 0&nbsp; )&nbsp;&nbsp;
+x&nbsp;&nbsp; (&nbsp; C&nbsp; )&nbsp;&nbsp; =&nbsp;&nbsp; (&nbsp; -50&nbsp;
+)
+<br>(&nbsp; 0&nbsp;&nbsp; 0&nbsp;&nbsp; 1&nbsp;&nbsp; -1&nbsp; )&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(&nbsp; D&nbsp; )&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ( -200 )
+<p>To obtain the solution for A, B, C and D we need to enter the constants
+as a 4 x 1 column matrix and
+<br>&nbsp;
+<table BORDER COLS=4 WIDTH="473" HEIGHT="30" BGCOLOR="#000099" >
+<tr ALIGN=CENTER BGCOLOR="#008080">
+<td><b><font color="#000000">1</font></b></td>
+
+<td><b><font color="#000000">2</font></b></td>
+
+<td><b>3</b></td>
+
+<td><b>4</b></td>
+</tr>
+
+<tr>
+<td><b><font color="#66FFFF">150.</font></b></td>
+
+<td><b><font color="#66FFFF">0.</font></b></td>
+
+<td><b><font color="#66FFFF">0.</font></b></td>
+
+<td><b><font color="#66FFFF">0.</font></b></td>
+</tr>
+
+<tr>
+<td><b><font color="#66FFFF">100.</font></b></td>
+
+<td><b><font color="#66FFFF">0.</font></b></td>
+
+<td><b><font color="#66FFFF">0.</font></b></td>
+
+<td><b><font color="#66FFFF">0.</font></b></td>
+</tr>
+
+<tr>
+<td><b><font color="#66FFFF">-50.</font></b></td>
+
+<td><b><font color="#66FFFF">0.</font></b></td>
+
+<td><b><font color="#66FFFF">0.</font></b></td>
+
+<td><b><font color="#66FFFF">0.</font></b></td>
+</tr>
+
+<tr>
+<td><b><font color="#66FFFF">-200.</font></b></td>
+
+<td><b><font color="#66FFFF">0.</font></b></td>
+
+<td><b><font color="#66FFFF">0.</font></b></td>
+
+<td><b><font color="#66FFFF">0.</font></b></td>
+</tr>
+</table>
+
+<p>then use the matrix divide ("<b>)/(</b>" = shift + "<b>/</b>") and then
+enter the coefficient matrix.
+<br>&nbsp;
+<table BORDER COLS=4 WIDTH="473" HEIGHT="30" BGCOLOR="#000099" >
+<tr ALIGN=CENTER BGCOLOR="#008080">
+<td><b><font color="#000000">1</font></b></td>
+
+<td><b><font color="#000000">2</font></b></td>
+
+<td><b>3</b></td>
+
+<td><b>4</b></td>
+</tr>
+
+<tr>
+<td><b><font color="#66FFFF">-1.</font></b></td>
+
+<td><b><font color="#66FFFF">0.</font></b></td>
+
+<td><b><font color="#66FFFF">0.</font></b></td>
+
+<td><b><font color="#66FFFF">1.</font></b></td>
+</tr>
+
+<tr>
+<td><b><font color="#66FFFF">1.</font></b></td>
+
+<td><b><font color="#66FFFF">-1.</font></b></td>
+
+<td><b><font color="#66FFFF">0.</font></b></td>
+
+<td><b><font color="#66FFFF">0.</font></b></td>
+</tr>
+
+<tr>
+<td><b><font color="#66FFFF">0.</font></b></td>
+
+<td><b><font color="#66FFFF">1.</font></b></td>
+
+<td><b><font color="#66FFFF">-1.</font></b></td>
+
+<td><b><font color="#66FFFF">0.</font></b></td>
+</tr>
+
+<tr>
+<td><b><font color="#66FFFF">0.</font></b></td>
+
+<td><b><font color="#66FFFF">0.</font></b></td>
+
+<td><b><font color="#66FFFF">1.</font></b></td>
+
+<td><b><font color="#66FFFF">-1.</font></b></td>
+</tr>
+</table>
+
+<p>The result, a 4 x 1 matrix, gives us A = 50, B = -50, C = 0 and D =
+200.
+<br>&nbsp;
+<table BORDER COLS=4 WIDTH="473" HEIGHT="30" BGCOLOR="#000099" >
+<tr ALIGN=CENTER BGCOLOR="#008080">
+<td><b><font color="#000000">1</font></b></td>
+
+<td><b><font color="#000000">2</font></b></td>
+
+<td><b>3</b></td>
+
+<td><b>4</b></td>
+</tr>
+
+<tr>
+<td><b><font color="#66FFFF">50.</font></b></td>
+
+<td><b><font color="#66FFFF">0.</font></b></td>
+
+<td><b><font color="#66FFFF">0.</font></b></td>
+
+<td><b><font color="#66FFFF">0.</font></b></td>
+</tr>
+
+<tr>
+<td><b><font color="#66FFFF">-50.</font></b></td>
+
+<td><b><font color="#66FFFF">0.</font></b></td>
+
+<td><b><font color="#66FFFF">0.</font></b></td>
+
+<td><b><font color="#66FFFF">0.</font></b></td>
+</tr>
+
+<tr>
+<td><b><font color="#66FFFF">0.</font></b></td>
+
+<td><b><font color="#66FFFF">0.</font></b></td>
+
+<td><b><font color="#66FFFF">0.</font></b></td>
+
+<td><b><font color="#66FFFF">0.</font></b></td>
+</tr>
+
+<tr>
+<td><b><font color="#66FFFF">200.</font></b></td>
+
+<td><b><font color="#66FFFF">0.</font></b></td>
+
+<td><b><font color="#66FFFF">0.</font></b></td>
+
+<td><b><font color="#66FFFF">0.</font></b></td>
+</tr>
+</table>
+
+<p>Armed with this information, the traffic engineer knows that Durham
+Avenue needs to handle substantially more traffic than Acacia Street, that
+Cornish Drive can be pedestrianised, and can alert the police to the 50
+cars which will be illegally reversing up Bond Road in any typical hour.&nbsp;
+The engineer may also wish to review the boundary conditions which are
+incompletely specified, because an arbitrary amount of circulating traffic
+can be added while still satisfying the constraints.
+<p>You may notice that a large proportion of the elements of this matrix
+are zero.&nbsp; This is typical when representing physical problems of
+networks or grids of points or control volumes, which result in very <i>sparse</i>
+matrices with bands of non zero elements.&nbsp; Another example is given
+below.
+<br>&nbsp;
+</body>
+</html>

@@ -1,0 +1,52 @@
+SQZV6.1
+title1
+title2
+iModel      nEcho       nDebug 
+3           0           0 
+nComp	nLay	UnitSpec
+1		2			C
+Rwell(ft)   Rmax(ft)
+1.0000      250.0000 
+Height(ft)  Phi         EffPerm(md)
+5.0000      0.2000      40 
+5.0000      0.2000      40 
+Type			 A			 Alpha			 B		 Beta		 Swc		 Sor		 Swi 
+  0 1.0000      1.0000      1.0000      1.0000      0.0000      0.0000      1.0000      
+Type			 A			 Alpha			 B		 Beta		 Swc		 Sor		 Swi 
+  0 1.0000      1.0000      1.0000      1.0000      0.0000      0.0000      1.0000      
+MUw       MUo 
+1.0000      0.8000     
+Role(Trac.=0,Inh=1,Visc.=2,Bloc.=3,MutSol.=4) Comp  1
+0
+kChem       kTemp 
+1           0
+MTrans 		 K
+0 		 0.000000
+IsoSpec	  TolItr
+0           1.0000e-020
+Well Friction 0 = NO , 1 = YES
+0 
+nR          Nstages     NIters      Nfreq       NoTstep     IsCon       IsTmp       
+50          1           15          10          0           0           0 
+Qw(bpm/bpd) watFrac     tspan(h/d)  dt(h/d)    CIw(ppm)   CIo(ppm)   TI(degC)    OperCode    nChage      nOpen       nMethod    
+0.4000      1.0000      32.8000     0.04000000  	1000.0000    0.0000       20.0000     1           1           0           2           1          
+LAYPRES
+1000.0000   600.0000 
+nLife       kPlot 
+0           0 
+GrafMic
+10.0000
+kCrange	   kGraf1	   kGraf2	   kGraf3
+0           0           0           0
+Field Squeeze Return Data 
+nPts 
+0 
+nOlds 
+0 
+Distance Dependent OutputFile 0 = NO, 1 = Yes  
+0
+Time Dependent OutputFile 0 = NO, 1 = Yes  
+1
+bWC bTQw bTQo bTCw bTCo bSIw bSIo bLQw bLQo bCPw bCPo bPw bPo bMass, 0 = NO, 1 = Yes
+  0   0   0   0   0   0   0   1   0   0   0   0   0   0
+

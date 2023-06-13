@@ -1,0 +1,1349 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PROPPAGE_LARGE1 DIALOGEX 0, 0, 350, 249
+STYLE DS_SETFONT | WS_MINIMIZEBOX | WS_POPUP | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "Layer Properties"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Static",IDC_STATIC_FLUID_PROP,14,162,326,74,SS_NOTIFY | WS_BORDER
+    GROUPBOX        "Fluid Properties",IDC_STATIC,7,131,339,111
+    RTEXT           "Water Viscosity",IDC_STATIC_WAT_VISC,93,146,67,11
+    RTEXT           "Oil Viscosity",IDC_STATIC_OIL_VISC,218,146,58,11
+    LTEXT           "Static",IDC_STATIC_ROCK_PROP,14,43,326,77,SS_NOTIFY | WS_BORDER
+    GROUPBOX        "Formation Properties",IDC_STATIC,7,14,339,111
+    RTEXT           "Well Radius",IDC_STATIC_WELLRAD,32,27,57,11
+    RTEXT           "Maximum Radius of Formation",IDC_STATIC_FORMATION,153,27,117,11
+    LTEXT           "Static",IDC_STATIC_MU_WAT,168,144,42,12,SS_NOTIFY | WS_BORDER
+    LTEXT           "Static",IDC_STATIC_MU_OIL,283,144,42,12,SS_NOTIFY | WS_BORDER
+    LTEXT           "Static",IDC_STATIC_MAX_RAD,275,25,42,12,SS_NOTIFY | WS_BORDER
+    LTEXT           "Static",IDC_STATIC_WELL_RAD,95,26,42,12,SS_NOTIFY | WS_BORDER
+    CONTROL         "All Layers Same",IDC_CHECK_ALLLAYERS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,22,145,66,8
+END
+
+IDD_PROPPAGE_LARGE2 DIALOG 0, 0, 350, 249
+STYLE DS_SETFONT | WS_MINIMIZEBOX | WS_POPUP | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "Components Properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Static",IDC_STATIC_WATER_PROP,13,68,326,73,SS_NOTIFY | WS_BORDER
+    LTEXT           "Static",IDC_STATIC_OIL_PROP,14,159,326,73,SS_NOTIFY | WS_BORDER
+    GROUPBOX        "Oil Components Adsorption Characteristics",IDC_STATIC,8,148,337,89
+    GROUPBOX        "Mass Transfer between Phases",IDC_STATIC,169,2,155,54
+    CONTROL         "All Layers the same",IDC_ALL_LAYERS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,48,25,85,12
+    GROUPBOX        "Same all layers",IDC_STATIC,33,2,130,52
+    LTEXT           "Static",IDC_STATIC_MASS_TRANS,176,13,142,38,SS_NOTIFY | WS_BORDER
+    GROUPBOX        "Water Components Adsorption Characteristics",IDC_STATIC,7,57,337,89
+END
+
+IDD_PROPPAGE_LARGE3 DIALOGEX 0, 0, 350, 249
+STYLE DS_SETFONT | WS_MINIMIZEBOX | WS_POPUP | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "Stages Properties"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Static",IDC_STATIC_STAGEGRID,9,51,333,151,SS_NOTIFY | WS_BORDER
+    CONTROL         "Automatic Time Step",IDC_CHECK_TIMESTEP,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,254,19,83,11
+    GROUPBOX        "Stages",IDC_STATIC,3,4,345,203
+    PUSHBUTTON      "Add Stage",IDC_ADD_STAGE,118,27,59,16
+    LTEXT           "Enter position of Stage",IDC_STATIC,12,31,74,12
+    EDITTEXT        IDC_NEW_STAGE_POS,89,29,23,12,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "Remove Stage",IDC_REMOVE_STAGE,181,27,59,16
+    CONTROL         "Headers",IDC_CHECK_HEADERS,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,65,12,83,11
+    CONTROL         "Low",IDC_RADIO_LOW,"Button",BS_AUTORADIOBUTTON | WS_GROUP,260,35,32,8
+    CONTROL         "High",IDC_RADIO_HIGH,"Button",BS_AUTORADIOBUTTON,299,35,32,8
+    GROUPBOX        "",IDC_STATIC,249,10,93,39
+    GROUPBOX        "Totals",IDC_STATIC,3,208,345,35
+    LTEXT           "Water Volume Produced",IDC_STATIC_VOL_INJ,8,220,307,8
+    LTEXT           "Water Volume Produced",IDC_STATIC_VOL_PROD,8,231,307,8
+    PUSHBUTTON      "Get Totals",IDC_BUTTON_UPDATE,316,214,30,27,BS_CENTER | BS_VCENTER | BS_MULTILINE,WS_EX_RIGHT
+END
+
+IDD_OVGRIDDLL_DIALOG DIALOG 0, 0, 273, 207
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Basic Model Parameters"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Project Title :",IDC_STATIC,16,17,46,12
+    EDITTEXT        IDC_EDIT1,68,15,144,14,ES_AUTOHSCROLL
+    GROUPBOX        "Model Type",IDC_STATIC,18,35,109,46
+    CONTROL         "Radial",IDC_RADIAL,"Button",BS_AUTORADIOBUTTON | WS_GROUP,31,48,63,12
+    CONTROL         "Linear Core Flood",IDC_LINEAR,"Button",BS_AUTORADIOBUTTON,31,65,78,12
+    GROUPBOX        "Units",IDC_STATIC,147,35,109,46
+    CONTROL         "Metric",IDC_METRIC,"Button",BS_AUTORADIOBUTTON | WS_GROUP,159,48,63,12
+    CONTROL         "Conventional",IDC_CONVENTIONAL,"Button",BS_AUTORADIOBUTTON,159,65,78,12
+    GROUPBOX        "Basic Model Parameters",IDC_STATIC,18,90,238,83
+    LTEXT           "Number of Blocks",IDC_STATIC,30,105,85,11
+    EDITTEXT        IDC_EDIT2,157,104,48,12,ES_AUTOHSCROLL
+    LTEXT           "Number of Layers",IDC_STATIC,32,123,85,11
+    LTEXT           "Number of Water Components",IDC_STATIC,32,140,118,11
+    LTEXT           "Number of Water Components",IDC_STATIC,32,157,112,11
+    EDITTEXT        IDC_EDIT3,157,122,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,157,139,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,157,156,48,12,ES_AUTOHSCROLL
+END
+
+IDD_PROPPAGE_LARGE4 DIALOGEX 0, 0, 350, 249
+STYLE DS_SETFONT | WS_MINIMIZEBOX | WS_POPUP | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "Graphics Options"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Return Concentration/Temperature plotted vs.",IDC_STATIC_RETCONC,11,19,147,10
+    CONTROL         "Time (linear scale)",IDC_RC_TIME_LIN,"Button",BS_AUTORADIOBUTTON | WS_GROUP,158,11,71,11
+    CONTROL         "Water Volume (linear scale)",IDC_RC_WATVOL_LIN,"Button",BS_AUTORADIOBUTTON,240,12,99,11
+    CONTROL         "Water Volume (log scale)",IDC_RC_WATVOL_LOG,"Button",BS_AUTORADIOBUTTON,240,25,99,11
+    CONTROL         "Time (log scale)",IDC_RC_TIME_LOG,"Button",BS_AUTORADIOBUTTON,158,24,65,11
+    GROUPBOX        "Return Curve Plot",IDC_STATIC_RETPLOT,6,3,337,35
+    CONTROL         "Screen Display showing Conc. and Temp vs. Distance",IDC_SCREEN_DISPLAY,
+                    "Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,80,41,188,12
+    LTEXT           "Maximum Number of Iterations per Time Step Calculation (recommended = 15)",IDC_STATIC_MAXITER,9,55,128,18
+    LTEXT           "Number of Time Steps per report (in the range of 10 to 200)",IDC_STATIC_MAXTIM,181,57,112,18
+    LTEXT           "Report up to five threshold inhibitor concentrations (ppm) at which squeeze lifetime is reported ",IDC_STATIC,27,104,294,8
+    LTEXT           "Solution Convergence Tolerance (Default, TolItr = 1e-8) Recommended Range, TolItr = 1e-6 to 1.0e-10",IDC_STATIC_TOL,15,134,252,16
+    LTEXT           "You may plot up to 8 previous simulations on the same graph as the current simulation",IDC_STATIC_FILES,150,152,198,16
+    LTEXT           "Static",IDC_STATIC_OLDFILES,151,172,193,51,SS_NOTIFY | WS_BORDER
+    PUSHBUTTON      "Press Here",IDC_BUTTON_GRAPHPARA,39,226,56,14
+    LTEXT           "Click Here",IDC_STATIC_FIELDTABLE,22,166,91,13,SS_NOTIFY | WS_BORDER
+    LTEXT           "Static",IDC_STATIC_NFREQ,301,58,39,13,SS_NOTIFY | WS_BORDER
+    LTEXT           "Static",IDC_STATIC_NITERS,137,58,39,13,SS_NOTIFY | WS_BORDER
+    LTEXT           "Static",IDC_STATIC_CLIFE1,6,117,56,13,SS_NOTIFY | WS_BORDER
+    LTEXT           "Static",IDC_STATIC_CLIFE2,76,117,56,13,SS_NOTIFY | WS_BORDER
+    LTEXT           "Static",IDC_STATIC_CLIFE3,146,117,56,13,SS_NOTIFY | WS_BORDER
+    LTEXT           "Static",IDC_STATIC_CLIFE4,216,117,56,13,SS_NOTIFY | WS_BORDER
+    LTEXT           "Static",IDC_STATIC_CLIFE5,286,117,56,13,SS_NOTIFY | WS_BORDER
+    LTEXT           "Static",IDC_STATIC_TOLITR,281,135,39,13,SS_NOTIFY | WS_BORDER
+    GROUPBOX        "Field Squeeze Return Data",IDC_STATIC_FIELDSQUEEZE,7,154,122,57
+    PUSHBUTTON      "Show Table",IDC_SHOW_TABLE,71,181,53,13
+    GROUPBOX        "Graphics Param. for multilayer Simulation",IDC_STATIC_GRPA,5,214,138,32
+    PUSHBUTTON      "Remove File Number",IDC_REMOVE_FILENUM,152,226,77,17
+    LTEXT           "Static",IDC_STATIC_FILENUM,238,228,31,13,SS_NOTIFY | WS_BORDER
+    LTEXT           "Enter 0 to remove all.",IDC_STATIC_ENTER0,275,230,71,11
+    PUSHBUTTON      "Input Table",IDC_INPUT_TABLE,11,181,53,13
+    PUSHBUTTON      "RemoveTable",IDC_REMOVE_TABLE,41,195,53,13
+    LTEXT           "Inhibitor Threshold Conc. for Colour-Shading. Plot in the Overall Return Curve Window",IDC_STATIC,13,78,277,8
+    LTEXT           "Static",IDC_STATIC_GRAFMIC,293,76,39,13,SS_NOTIFY | WS_BORDER
+    GROUPBOX        "Time and Distance Dependant Output File",IDC_STATIC_OUTPUTFILE,6,3,337,72
+    CONTROL         "Time Output File",IDC_CHECK_OUTPUTFILE2,"Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,14,15,86,12
+    CONTROL         "Water Concentration Profile",IDC_CW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,111,15,103,11
+    CONTROL         "Oil Concentration Profile",IDC_CO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,111,29,103,11
+    CONTROL         "Water Adsorption Profile",IDC_ADSW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,111,43,103,11
+    CONTROL         "Oil Adsorption Profile",IDC_ADSO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,111,57,105,11
+    CONTROL         "Water Viscosity Profile",IDC_VISCW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,223,15,103,11
+    CONTROL         "Oil Viscosity Profile",IDC_VISCO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,223,30,103,11
+    CONTROL         "Water Resistance Factor Profile",IDC_RFW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,223,44,114,11
+    CONTROL         "Oil Resistance Factor Profile",IDC_RFO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,223,58,103,11
+    CONTROL         "Distance Output File",IDC_CHECK_OUTPUTFILE,"Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,14,27,86,12
+    CONTROL         "Water Saturation Profile",IDC_SW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,42,89,11
+    CONTROL         "Water Fraction Profile",IDC_FW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,56,83,11
+    CONTROL         "In Situ Concentration vs. Distance",IDC_ISCON,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,30,93,124,8
+    CONTROL         "In Situ Temperature vs. Distance",IDC_ISTMP,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,174,93,124,8
+    CONTROL         "Time ",IDC_RC_TIME,"Button",BS_AUTORADIOBUTTON,175,92,43,11
+    CONTROL         "Water Volume Produced",IDC_RC_WATPRO,"Button",BS_AUTORADIOBUTTON,234,93,92,11
+END
+
+IDD_GRAPHPARAMDLG_DIALOG DIALOGEX 0, 0, 246, 265
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Graphics Parameters"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,55,244,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,132,244,50,14
+    CONTROL         "Define the Minimum and Maximum Concentration plotting (ppm)",IDC_CHECK_MINMAXCON,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,4,228,11
+    LTEXT           "Min",IDC_STATIC,38,22,16,10
+    LTEXT           "Max",IDC_STATIC,136,22,16,10
+    GROUPBOX        "",IDC_STATIC_GRAPH1,13,52,217,48
+    CONTROL         "Plot Optional Graph 1 - Colour Grading Chart for In Situ Distribution of",IDC_CHECK_GRAPH1,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,40,228,11
+    CONTROL         "Inhibitor/Tracer Mobil Concentration",IDC_RADIO_INH,
+                    "Button",BS_AUTORADIOBUTTON | WS_GROUP,31,61,133,9
+    CONTROL         "Adsorption/Precipitation Level",IDC_RADIO_ADSORP,"Button",BS_AUTORADIOBUTTON,31,74,120,9
+    CONTROL         "Temperature",IDC_RADIO_TEMPERATURE,"Button",BS_AUTORADIOBUTTON,31,87,87,9
+    CONTROL         "Plot Optional Graph2 - Layer Chemical Returns for Layers :",IDC_CHECK_GRAPH2,
+                    "Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,12,106,108,21
+    CONTROL         "Plot Optional Graph 3 - In Situ Chemical Concentrations for Layers :",IDC_CHECK_GRAPH3,
+                    "Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,126,101,109,30
+    LTEXT           "Static",IDC_STATIC_GRAPH2,29,133,74,54,SS_NOTIFY | WS_BORDER
+    LTEXT           "Static",IDC_STATIC_GRAPH3,145,133,74,54,SS_NOTIFY | WS_BORDER
+    EDITTEXT        IDC_EDIT_MINCONC,56,21,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MAXCONC,159,21,48,12,ES_AUTOHSCROLL
+    GROUPBOX        "",IDC_STATIC_GRAPH4,14,192,217,48
+    CONTROL         "Create output file with layer concentration vs time/volume",IDC_CHECK_EXTRA_OUTPUT,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,21,201,201,11
+    CONTROL         "Including mixing in wellbore",IDC_RADIO_EXTRAOUT,"Button",BS_AUTORADIOBUTTON | WS_GROUP,41,214,133,9
+    CONTROL         "Outside completion",IDC_RADIO_EXTRAOUT2,"Button",BS_AUTORADIOBUTTON,41,227,120,9
+END
+
+IDD_PROPPAGE_LARGE5 DIALOG 0, 0, 350, 249
+STYLE DS_SETFONT | WS_MINIMIZEBOX | WS_POPUP | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "Linear Analytical Properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Porosity of Reservoir Rock",IDC_STATIC,14,14,104,9
+    LTEXT           "Injected Inhibitor Concentration, ppm",IDC_STATIC,14,29,120,9
+    LTEXT           "Volume of injected solution, bbls",IDC_STATIC_VOLINJ,193,14,103,9
+    LTEXT           "Volume of Overflush, bbls",IDC_STATIC_VOLOVE,193,29,103,9
+    GROUPBOX        "Method of defining Freundlich Isotherm",IDC_STATIC,7,43,339,59
+    CONTROL         "Define Parameters, n and k",IDC_RADIO_NK,"Button",BS_AUTORADIOBUTTON | WS_GROUP,13,62,105,10
+    CONTROL         "Define Parameters, n and CSE",IDC_RADIO_NCSE,"Button",BS_AUTORADIOBUTTON,13,78,109,10
+    LTEXT           "Freundlich Isotherm Parameter, n",IDC_STATIC_FN,144,53,128,9
+    LTEXT           "Freundlich Isotherm Parameter, k",IDC_STATIC_FK,144,68,128,9
+    LTEXT           "Adsorbed Inhibitor Concentration in Equilibrium with injected concentration (CSE), mg/L of rock",IDC_STATIC_CSE,144,81,153,17
+    LTEXT           "Maximum Number of Iterations per Time Step Calculation (recommended = 15)",IDC_STATIC,15,175,258,11
+    LTEXT           "Report up to five threshold inhibitor concentrations (ppm) at which squeeze lifetime is reported ",IDC_STATIC,28,190,294,10
+    GROUPBOX        "Details of concentration versus Flow Volume Graph (Return Curve) ",IDC_STATIC,7,105,339,64
+    LTEXT           "Minimum Volume Displayed, bbls",IDC_STATIC_MINVOL,14,119,128,9
+    LTEXT           "Maximum Volume Displayed, bbls",IDC_STATIC_MAXVOL,14,137,128,9
+    LTEXT           "Type of Spacing on Volume Axis (x Axis) :",IDC_STATIC,208,120,132,8
+    CONTROL         "Linear",IDC_RADIO_LIN,"Button",BS_AUTORADIOBUTTON | WS_GROUP,236,133,36,10
+    CONTROL         "Logarithmic",IDC_RADIO_LOG,"Button",BS_AUTORADIOBUTTON,236,150,53,10
+    LTEXT           "Number of Return Curve Points in Output File",IDC_STATIC,14,155,144,8
+    LTEXT           "Static",IDC_STATIC_CLIFE1,9,203,56,13,SS_NOTIFY | WS_BORDER
+    LTEXT           "Static",IDC_STATIC_CLIFE2,79,203,56,13,SS_NOTIFY | WS_BORDER
+    LTEXT           "Static",IDC_STATIC_CLIFE3,149,203,56,13,SS_NOTIFY | WS_BORDER
+    LTEXT           "Static",IDC_STATIC_CLIFE4,219,203,56,13,SS_NOTIFY | WS_BORDER
+    LTEXT           "Static",IDC_STATIC_CLIFE5,289,203,56,13,SS_NOTIFY | WS_BORDER
+    LTEXT           "Solution Convergence Tolerance (Default, TolItr = 1e-8) Recommended Range, TolItr = 1e-6 to 1.0e-10",IDC_STATIC,27,223,253,19
+    LTEXT           "Static",IDC_STATIC_PHI,145,11,39,13,SS_NOTIFY | WS_BORDER
+    LTEXT           "Static",IDC_STATIC_CI,145,27,39,13,SS_NOTIFY | WS_BORDER
+    LTEXT           "Static",IDC_STATIC_VOLINJE,301,11,39,13,SS_NOTIFY | WS_BORDER
+    LTEXT           "Static",IDC_STATIC_VOLOVEE,301,27,39,13,SS_NOTIFY | WS_BORDER
+    LTEXT           "Static",IDC_STATIC_FNE,301,51,39,13,SS_NOTIFY | WS_BORDER
+    LTEXT           "Static",IDC_STATIC_FKE,301,67,39,13,SS_NOTIFY | WS_BORDER
+    LTEXT           "Static",IDC_STATIC_CSEE,301,83,39,13,SS_NOTIFY | WS_BORDER
+    LTEXT           "Static",IDC_STATIC_MINVOLE,164,116,39,13,SS_NOTIFY | WS_BORDER
+    LTEXT           "Static",IDC_STATIC_MAXVOLE,164,135,39,13,SS_NOTIFY | WS_BORDER
+    LTEXT           "Static",IDC_STATIC_NUMRET,164,154,39,13,SS_NOTIFY | WS_BORDER
+    LTEXT           "Static",IDC_STATIC_MAXITER,291,173,39,13,SS_NOTIFY | WS_BORDER
+    LTEXT           "Static",IDC_STATIC_TOL,293,225,39,13,SS_NOTIFY | WS_BORDER
+END
+
+IDD_PROPPAGE_LARGE6 DIALOGEX 0, 0, 350, 249
+STYLE DS_SETFONT | WS_MINIMIZEBOX | WS_POPUP | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "Graphics Options"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Report up to five threshold inhibitor concentrations (ppm) at which squeeze lifetime is reported ",IDC_STATIC,27,99,294,10
+    LTEXT           "Solution Convergence Tolerance (Default, TolItr = 1e-8) Recommended Range, TolItr = 1e-6 to 1.0e-10",IDC_STATIC_TOL,15,131,252,21
+    LTEXT           "You may plot up to 8 previous simulations on the same graph as the current simulation",IDC_STATIC_FILES,150,152,198,16
+    LTEXT           "Static",IDC_STATIC_OLDFILES2,151,172,193,51,SS_NOTIFY | WS_BORDER
+    PUSHBUTTON      "Press Here",IDC_BUTTON_GRAPHPARA,39,226,56,14
+    LTEXT           "Click Here",IDC_STATIC_FIELDTABLE,22,166,91,13,SS_NOTIFY | WS_BORDER
+    LTEXT           "Static",IDC_STATIC_CLIFE1,6,113,56,13,SS_NOTIFY | WS_BORDER
+    LTEXT           "Static",IDC_STATIC_CLIFE2,76,113,56,13,SS_NOTIFY | WS_BORDER
+    LTEXT           "Static",IDC_STATIC_CLIFE3,146,113,56,13,SS_NOTIFY | WS_BORDER
+    LTEXT           "Static",IDC_STATIC_CLIFE4,216,113,56,13,SS_NOTIFY | WS_BORDER
+    LTEXT           "Static",IDC_STATIC_CLIFE5,286,113,56,13,SS_NOTIFY | WS_BORDER
+    LTEXT           "Static",IDC_STATIC_TOLITR,281,135,39,13,SS_NOTIFY | WS_BORDER
+    GROUPBOX        "Field Squeeze Return Data",IDC_STATIC_FIELDSQUEEZE,7,154,122,57
+    PUSHBUTTON      "Show Table",IDC_SHOW_TABLE,71,181,53,13
+    GROUPBOX        "Graphics Param. for multilayer Simulation",IDC_STATIC_GRPA,5,214,138,32
+    PUSHBUTTON      "Remove File Number",IDC_REMOVE_FILENUM,152,226,77,17
+    LTEXT           "Static",IDC_STATIC_FILENUM,238,228,31,13,SS_NOTIFY | WS_BORDER
+    LTEXT           "Enter 0 to remove all.",IDC_STATIC_ENTER0,275,230,71,11
+    PUSHBUTTON      "Input Table",IDC_INPUT_TABLE,11,181,53,13
+    PUSHBUTTON      "RemoveTable",IDC_REMOVE_TABLE,41,195,53,13
+    LTEXT           "Inhibitor Threshold Conc. for Colour-Shading. Plot in the Overall Return Curve Window",IDC_STATIC,13,84,277,13
+    LTEXT           "Static",IDC_STATIC_GRAFMIC,293,82,39,13,SS_NOTIFY | WS_BORDER
+    GROUPBOX        "Time and Distance Dependant Output File",IDC_STATIC_OUTPUTFILE,6,3,337,72
+    CONTROL         "Water Concentration Profile",IDC_CW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,111,15,103,11
+    CONTROL         "Oil Concentration Profile",IDC_CO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,111,29,103,11
+    CONTROL         "Water Adsorption Profile",IDC_ADSW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,111,43,103,11
+    CONTROL         "Oil Adsorption Profile",IDC_ADSO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,111,57,105,11
+    CONTROL         "Water Viscosity Profile",IDC_VISCW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,223,15,103,11
+    CONTROL         "Oil Viscosity Profile",IDC_VISCO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,223,30,103,11
+    CONTROL         "Water Resistance Factor Profile",IDC_RFW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,223,44,114,11
+    CONTROL         "Oil Resistance Factor Profile",IDC_RFO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,223,58,103,11
+    CONTROL         "Distance Output File",IDC_CHECK_OUTPUTFILE,"Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,14,27,86,12
+    CONTROL         "Water Saturation Profile",IDC_SW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,42,89,11
+    CONTROL         "Water Fraction Profile",IDC_FW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,56,83,11
+    CONTROL         "Time Output File",IDC_CHECK_OUTPUTFILE2,"Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,14,15,86,12
+END
+
+IDD_PROPPAGE_LARGE7 DIALOGEX 0, 0, 350, 249
+STYLE DS_SETFONT | WS_MINIMIZEBOX | WS_POPUP | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "Optimisation Parameters"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Static",IDC_STATIC_OPTIMISATION2,15,27,318,87,SS_NOTIFY | WS_BORDER
+    LTEXT           "Treatment Injection Cost Rate (per hour)",IDC_STATIC,9,223,170,12
+    LTEXT           "Scale Inhibitor Cost (Neat Product per bbl)",IDC_STATIC_SI_COST,9,236,167,9
+    GROUPBOX        "Squeeze Design Stages",IDC_STATIC,9,14,332,106
+    GROUPBOX        "PSO Parameters ",IDC_STATIC,212,121,132,35,BS_CENTER
+    LTEXT           "Generations",IDC_STATIC,216,144,48,11
+    LTEXT           "Population Size",IDC_STATIC,215,133,64,11
+    GROUPBOX        "Optimisation Objectives",IDC_STATIC,5,184,201,63,BS_CENTER
+    LTEXT           "Sqz Lifetime Target Vol Prod Water (1000 bbls)",IDC_STATIC_T_V,9,209,171,12
+    LTEXT           "MIC (ppm)",IDC_STATIC,9,193,45,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_InjHourRate,174,220,28,12,ES_CENTER | ES_AUTOHSCROLL | NOT WS_TABSTOP
+    EDITTEXT        IDC_EDIT_T_V,174,207,28,12,ES_CENTER | ES_AUTOHSCROLL | NOT WS_TABSTOP
+    EDITTEXT        IDC_EDIT_MIC,174,194,28,12,ES_CENTER | ES_AUTOHSCROLL | NOT WS_TABSTOP
+    EDITTEXT        IDC_EDIT_SICost,174,233,28,12,ES_CENTER | ES_AUTOHSCROLL | NOT WS_TABSTOP
+    EDITTEXT        IDC_EDIT_nGen,312,143,28,12,ES_CENTER | ES_AUTOHSCROLL | NOT WS_TABSTOP
+    EDITTEXT        IDC_EDIT_nPopSize,311,130,28,12,ES_CENTER | ES_AUTOHSCROLL | NOT WS_TABSTOP
+    GROUPBOX        "Sensitivity Calculations",IDC_STATIC,212,164,132,23,BS_CENTER
+    LTEXT           "Number of Bins",IDC_STATIC,216,176,48,8
+    EDITTEXT        IDC_EDIT_nBins,311,173,28,12,ES_CENTER | ES_AUTOHSCROLL | NOT WS_TABSTOP
+    EDITTEXT        IDC_EDIT_SI_VOL,311,219,28,12,ES_CENTER | ES_AUTOHSCROLL | NOT WS_TABSTOP
+    EDITTEXT        IDC_EDIT_TOT_VOL,311,232,28,12,ES_CENTER | ES_AUTOHSCROLL | NOT WS_TABSTOP
+    CONTROL         "Operational Constraints",IDC_CHECK_OPER_CONS,"Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,235,206,94,12
+    CONTROL         "Total SI Volume",IDC_CHECK_ONLY_SI_VOL,"Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,216,221,96,12
+    CONTROL         "Total Injected Volume",IDC_CHECK_ONLY_TOT_VOL,"Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,216,233,95,9
+    GROUPBOX        "Operational Constraints",IDC_STATIC,211,197,133,49,BS_CENTER
+    CONTROL         "Fixed Squeeze Target",IDC_CHECK_FIXED_TARGET,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,66,132,84,14
+    GROUPBOX        "Fixed-Target Optimisation",IDC_STATIC,5,121,201,54,BS_CENTER
+    EDITTEXT        IDC_EDIT_BinsMT,174,144,27,14,ES_CENTER | ES_AUTOHSCROLL | NOT WS_TABSTOP
+    LTEXT           "Number of Bins (MT Increaments)",IDC_STATIC,9,148,106,8
+    LTEXT           "Number of Iterations (recommended at least 5)",IDC_STATIC,9,161,147,11
+    EDITTEXT        IDC_EDIT_IterationsSecant,174,159,28,14,ES_CENTER | ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "FileDescription", "Squeeze 9 MFC Application"
+            VALUE "FileVersion", "9"
+            VALUE "InternalName", "Squeeze 9"
+            VALUE "LegalCopyright", "Copyright (C) 2013"
+            VALUE "OriginalFilename", "Squeeze9.EXE"
+            VALUE "ProductName", "Squeeze 9 Application"
+            VALUE "ProductVersion", "9.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_PROPPAGE_LARGE1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 346
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 242
+    END
+
+    IDD_PROPPAGE_LARGE2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 344
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 243
+    END
+
+    IDD_PROPPAGE_LARGE3, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 348
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 242
+    END
+
+    IDD_OVGRIDDLL_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 266
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 200
+    END
+
+    IDD_PROPPAGE_LARGE4, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 348
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 246
+    END
+
+    IDD_GRAPHPARAMDLG_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 239
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 258
+    END
+
+    IDD_PROPPAGE_LARGE5, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 346
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 242
+    END
+
+    IDD_PROPPAGE_LARGE6, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 348
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 246
+    END
+
+    IDD_PROPPAGE_LARGE7, DIALOG
+    BEGIN
+        RIGHTMARGIN, 348
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 246
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_PROPPAGE_LARGE7 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United Kingdom) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ISO_TABLE DIALOGEX 0, 0, 124, 178
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Isotherm Table"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Close",IDOK,7,157,54,14
+    LTEXT           "",IDC_ISO_TABLE,7,7,110,148,SS_NOTIFY | WS_BORDER
+    DEFPUSHBUTTON   "Save",IDSAVE,63,157,54,14
+END
+
+IDD_BASIC_2PHASE DIALOGEX 0, 0, 409, 394
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Basic Model Parameters"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "Model Type",IDC_STATIC,5,72,140,93
+    CONTROL         "Radial (Field Case)",IDC_RADIAL,"Button",BS_AUTORADIOBUTTON | WS_GROUP,14,85,71,12
+    CONTROL         "Linear Core Flood",IDC_LINEAR,"Button",BS_AUTORADIOBUTTON,14,100,78,12
+    CONTROL         "Isotherm Derivation and Validation",IDC_ISOTHERM,"Button",BS_AUTORADIOBUTTON | BS_MULTILINE,14,112,121,20
+    CONTROL         "Isotherm Derivation",IDC_ISOTHERM_DER,"Button",BS_AUTORADIOBUTTON | BS_MULTILINE,14,131,80,13
+    CONTROL         "Analytical Linear",IDC_ANAL_LINEAR,"Button",BS_AUTORADIOBUTTON | BS_MULTILINE,14,148,80,13
+    GROUPBOX        "Units",IDC_STATIC_UNITS,283,30,103,43
+    CONTROL         "Metric",IDC_METRIC,"Button",BS_AUTORADIOBUTTON | WS_GROUP,301,40,63,12
+    CONTROL         "Conventional",IDC_CONVENTIONAL,"Button",BS_AUTORADIOBUTTON,301,57,78,12
+    GROUPBOX        "Basic Model Parameters",IDC_STATIC,5,168,126,82
+    LTEXT           "Number of Blocks",IDC_STATIC,13,181,79,11
+    EDITTEXT        IDC_NUM_BLOCKS,98,179,24,12,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "Number of Layers",IDC_STATIC,13,199,57,11
+    LTEXT           "Number of Components",IDC_STATIC,13,216,76,11
+    LTEXT           "Number of Stages",IDC_STATIC,13,233,58,11
+    EDITTEXT        IDC_NUM_LAYERS,98,197,24,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_NUM_COMP,98,214,24,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_NUM_STAGES,98,231,24,12,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "UPDATE",IDOK,97,368,104,23
+    PUSHBUTTON      "CANCEL",IDC_CANCEL,207,368,104,23
+    LTEXT           "Project Title1 :",IDC_STATIC,12,40,46,12
+    EDITTEXT        IDC_EDIT_TITLE1,61,38,201,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_TITLE2,61,54,201,12,ES_AUTOHSCROLL
+    LTEXT           "Project Title2 :",IDC_STATIC,12,56,46,12
+    GROUPBOX        "Isotherm Derivation Parameters",IDC_STATIC_ISOTHERM,159,74,247,105
+    LTEXT           "VI, Volume of inhibitor injected (cm3)",IDC_STATIC_VI,165,86,175,12
+    EDITTEXT        IDC_VOL_INJ,346,83,32,12,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "Vd, Total dead Volume (cm3)",IDC_STATIC_TDV,165,102,175,12
+    LTEXT           "CI, Injected Inhibitor Concentration (ppm)",IDC_STATIC_IHC,165,118,175,12
+    LTEXT           "Rho, Density of rock grain (g/cm3)",IDC_STATIC_RHO,165,150,175,12
+    EDITTEXT        IDC_TOT_VOL,346,100,32,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_INH_CON,346,116,32,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_RHO,346,149,32,12,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "CShut, Inh. Conc. of the first postflush sample (ppm)",IDC_STATIC_CSHUT,165,134,175,12
+    EDITTEXT        IDC_CSHUT,346,133,32,12,ES_CENTER | ES_AUTOHSCROLL
+    GROUPBOX        "Simulation Type",IDC_STATIC,77,3,255,25
+    CONTROL         "Single Phase Simulation",IDC_SINGLE_PHASE,"Button",BS_AUTORADIOBUTTON | WS_GROUP,92,15,102,8
+    CONTROL         "Two Phase Simulation",IDC_TWO_PHASE,"Button",BS_AUTORADIOBUTTON,216,15,100,8
+    GROUPBOX        "Project Title",IDC_STATIC,5,28,264,42
+    GROUPBOX        "Well Friction",IDC_STATIC,138,184,268,66
+    CONTROL         "Well Friction",IDC_CHECK_WELLFRICTION,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,228,190,54,11
+    LTEXT           "Tubing Inner Diameter, m",IDC_STATIC_WELLDIA,146,206,99,10
+    EDITTEXT        IDC_EDIT_WELLDIA,256,205,36,12,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "Tubing Absolute Roughness, m",IDC_STATIC_TUBEROUGH,146,220,103,10
+    EDITTEXT        IDC_EDIT_TUBEROUGH,256,219,36,12,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "Fluid Density, kg/m3",IDC_STATIC_FLUIDRHO,146,234,103,10
+    EDITTEXT        IDC_EDIT_FLUIDRHO,256,233,36,12,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "Static",IDC_STATIC_LAYER_SPACING,302,205,93,40,SS_NOTIFY | WS_BORDER
+    GROUPBOX        "Temperature Calculations Parameters",IDC_STATIC,5,252,401,112
+    LTEXT           "Formation Temperature Before Squeeze Treatment",IDC_STATIC_FORMTEMP,10,285,192,9
+    LTEXT           "Thermal Conductivity of Reservoir",IDC_STATIC_THCONDRES,10,330,192,9
+    LTEXT           "Formation Underburden/Overburden Thermal Conductivity",IDC_STATIC_FORMTHCOND,10,305,192,20
+    LTEXT           "Rock Grain Density",IDC_STATIC_ROGRDEN,243,305,118,9
+    LTEXT           "Aqueous Heat Capacity",IDC_STATIC_AQHECAP,243,262,124,9
+    LTEXT           "Rock Heat Capacity ",IDC_STATIC_ROHECAP,243,275,118,9
+    LTEXT           "Aqueous Phase Density",IDC_STATIC_AQPHDEN,243,289,118,9
+    EDITTEXT        IDC_EDIT_FORMTEMP,202,283,36,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AQHECAP,368,260,36,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_FORMTHCOND,202,305,36,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_THCONDRES,202,326,36,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ROHECAP,368,274,36,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AQPHDEN,368,288,36,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ROGRDEN,368,302,36,12,ES_CENTER | ES_AUTOHSCROLL
+    CONTROL         "Temperature Calculations",IDC_CHECK_TEMPERATURE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,46,266,124,11
+    LTEXT           "",IDC_STATIC_ISOTABLE,308,163,91,13,SS_NOTIFY | WS_BORDER
+    PUSHBUTTON      "Show Data",IDC_SHOW_DATA,245,163,53,13
+    PUSHBUTTON      "Input Effluent Data",IDC_INPUT_EFFLUENT,168,163,69,13
+    LTEXT           "Non-Aqueous Heat Capacity",IDC_STATIC_NAHECAP,244,321,124,9
+    EDITTEXT        IDC_EDIT_NAHECAP,368,319,36,12,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "Non-Aqueous Phase Density",IDC_STATIC_NAPHDEN,243,334,118,9
+    EDITTEXT        IDC_EDIT_NAPHDEN,368,332,36,12,ES_CENTER | ES_AUTOHSCROLL
+    CONTROL         "Temperature Water Viscosity Dependence",IDC_CHECK_WAT_VISC,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,349,151,11
+    CONTROL         "Temperature Oil Viscosity Dependence",IDC_CHECK_OIL_VISC,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,164,349,138,11
+    LTEXT           "Oil API",IDC_STATIC_OILAPI,306,350,26,10
+    EDITTEXT        IDC_EDIT_OILAPI,336,349,36,12,ES_CENTER | ES_AUTOHSCROLL
+END
+
+IDD_BASIC_DLG DIALOGEX 0, 0, 245, 272
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "Squeeze 13"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Project Title",IDC_STATIC,9,55,223,41
+    PUSHBUTTON      "Read File",IDC_READ_FILE,18,107,88,23
+    PUSHBUTTON      "Edit Model",IDC_EDIT_MODEL1,18,159,88,23
+    PUSHBUTTON      "Run Model",IDC_RUN_MODEL,18,185,88,23
+    PUSHBUTTON      "Abort Run",IDC_ABORT_RUN,18,211,88,23
+    CONTROL         "GRAPH TIME",IDC_GRAPH_TIME,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,133,147,93,21
+    CONTROL         "GRAPH CROSS",IDC_GRAPH_CROSS2,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,133,125,93,21
+    GROUPBOX        "Graphics",IDC_STATIC,123,97,109,140
+    CONTROL         "GRAPH RAD",IDC_GRAPH_RAD,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | WS_TABSTOP,133,169,93,21
+    GROUPBOX        "Controls",IDC_STATIC,9,97,109,140
+    PUSHBUTTON      "Output Freq",IDC_MOD,133,108,50,14
+    EDITTEXT        IDC_EDIT_MOD,187,108,39,14,ES_CENTER | ES_AUTOHSCROLL
+    PUSHBUTTON      "Basic Parameters",IDC_BASIC_PARA,18,133,88,23
+    CONTROL         "Slider1",IDC_SLIDER_TIME_DELAY,"msctls_trackbar32",TBS_AUTOTICKS | TBS_BOTH | NOT WS_VISIBLE | WS_TABSTOP,129,249,102,13
+    LTEXT           "Time added per loop",IDC_STATIC_ADDEDTIME,132,241,90,11,NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_TITLE1,10,64,217,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_TITLE2,12,81,217,12,ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        "Simulation Type",IDC_STATIC,66,2,113,24,BS_CENTER
+    LTEXT           "Two-Phase Simulation",IDC_STATIC_SIM_TYPE,87,13,77,8
+    PUSHBUTTON      "CLOSE ALL",IDC_CLOSE,63,242,114,24
+    PUSHBUTTON      "PAUSE",IDC_BUTTON_STOP,135,253,43,17,NOT WS_VISIBLE
+    PUSHBUTTON      "PLAY",IDC_BUTTON_PLAY,185,253,43,17,NOT WS_VISIBLE
+    PUSHBUTTON      "Help",IDC_BUTTON_HELP,181,3,57,13
+    PUSHBUTTON      "About",IDC_BUTTON_ABOUT,181,16,57,13
+    CONTROL         "Warnings",IDC_WARNING,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,2,261,45,9
+    PUSHBUTTON      "History Matching",IDC_BUTTON_OPT,2,247,42,23,BS_MULTILINE | NOT WS_VISIBLE
+    CONTROL         "Graphs",IDC_CHECK_GRAPHS,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,198,244,40,9
+    PUSHBUTTON      "SGA Isotherm matching",IDC_BUTTON_GA,34,251,57,20,BS_MULTILINE | NOT WS_VISIBLE
+    PUSHBUTTON      "RCGA Isotherm matching",IDC_BUTTON_RCGA,2,243,57,20,BS_MULTILINE | NOT WS_VISIBLE
+    PUSHBUTTON      "Hill Climber Isotherm Matching",IDC_BUTTON_HC,2,245,79,25,BS_MULTILINE | NOT WS_VISIBLE
+    PUSHBUTTON      "Tracer PSO",IDC_BUTTON_PSO,2,241,66,29,NOT WS_VISIBLE
+    PUSHBUTTON      "Test PSO",IDC_BUTTON_PSO_TEST,23,258,41,12,NOT WS_VISIBLE
+    PUSHBUTTON      "Isotherm Fitting",IDC_BUTTON_ISOFITTING,62,56,67,26,NOT WS_VISIBLE
+    PUSHBUTTON      "Phreeqc",IDC_BUTTON_PHREEQC,2,247,42,23,BS_MULTILINE | NOT WS_VISIBLE
+    PUSHBUTTON      "Isotherm Fitting Parallel",IDC_BUTTON_ISO_TEST,6,2,57,26,BS_MULTILINE
+    CONTROL         "",IDC_SLIDER_SP_TS,"msctls_trackbar32",TBS_AUTOTICKS | TBS_BOTH | WS_TABSTOP,127,200,102,14
+    PUSHBUTTON      "Back",IDC_BUTTON_BACK,132,216,43,17
+    PUSHBUTTON      "Foward",IDC_BUTTON_FOWARD,182,216,43,17
+    LTEXT           "Graphics Slider Time Step",IDC_STATIC,137,192,85,9
+    PUSHBUTTON      "Parallel Run",IDC_BUTTON_PAR_RUN,181,29,57,26
+    PUSHBUTTON      "Design Optimisation",IDC_BUTTON_PAR_OPT,65,29,57,26,BS_MULTILINE
+    PUSHBUTTON      "MOPSO",IDC_BUTTON_MOPSO,109,90,97,16,NOT WS_VISIBLE
+    PUSHBUTTON      "Sensitivity Caculations",IDC_BUTTON1,123,29,57,26,BS_MULTILINE
+    PUSHBUTTON      "Button2",IDC_BUTTON2,188,60,50,14
+    PUSHBUTTON      "Iso-Life Curve",IDC_BUTTON_Sec_Opt,6,29,57,26,BS_MULTILINE
+END
+
+IDD_GRAPHICS DIALOGEX 0, 0, 216, 121
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_THICKFRAME
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+END
+
+IDD_GRAPHICS_BLOCK DIALOGEX 0, 0, 216, 121
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_THICKFRAME
+EXSTYLE WS_EX_NOPARENTNOTIFY
+CAPTION "Dialog"
+MENU IDR_MENU1
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+END
+
+IDD_DIALOG_SIM_RUN DIALOGEX 0, 0, 173, 45
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Simulation Running"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Please, wait few more seconds",IDC_STATIC_TXT,48,16,102,12
+    ICON            IDR_MAINFRAME,IDC_STATIC_FRAME,16,12,21,20
+END
+
+IDD_STAGE_DLG DIALOGEX 0, 0, 199, 243
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Injected Concentration and Flow Distribution"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,29,225,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,119,225,50,14
+    LTEXT           "Static",IDC_STATIC_LAY_COND,10,66,179,53,SS_NOTIFY | WS_BORDER
+    GROUPBOX        "Layers",IDC_STATIC,4,1,192,127
+    LTEXT           "Static",IDC_STATIC_COMP_COND,11,159,179,53,SS_NOTIFY | WS_BORDER
+    GROUPBOX        "Components Concentrations",IDC_STATIC,4,133,192,85
+    CONTROL         "All Layers Open",IDC_CHECK_LAY_OPEN,"Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,119,8,68,13
+    CONTROL         "All Components the same",IDC_CHECK_ALL_COMP,"Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,49,140,101,18
+    CONTROL         "KH Product",IDC_KH,"Button",BS_AUTORADIOBUTTON | WS_GROUP,21,26,49,8
+    CONTROL         "PIDF",IDC_PIDF,"Button",BS_AUTORADIOBUTTON,21,38,76,8
+    CONTROL         "Pressurised Layers",IDC_LAYPRES,"Button",BS_AUTORADIOBUTTON,21,49,81,10
+    GROUPBOX        "Flow rate in terms of",IDC_STATIC,10,13,94,50
+    GROUPBOX        "Units Pres Layers",IDC_STATIC_UNITS,111,24,78,39
+    CONTROL         "bar",IDC_RADIO_BAR,"Button",BS_AUTORADIOBUTTON | WS_DISABLED | WS_GROUP,122,35,23,10
+    CONTROL         "psi",IDC_RADIO_PSI,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,155,35,24,10
+    CONTROL         "All Press Same",IDC_CHECK_PRESS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,121,48,59,11
+END
+
+IDD_VISCODLG_DIALOG DIALOGEX 0, 0, 305, 173
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Viscosifying Effect"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,98,155,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,155,155,50,14
+    GROUPBOX        "Static Water Viscosity",IDC_STATIC,5,7,143,64
+    GROUPBOX        "Water Shear Thinning",IDC_STATIC,4,77,143,73
+    LTEXT           "Water Maximum Solution Viscosity, cP",IDC_STATIC,13,22,82,17
+    EDITTEXT        IDC_EDIT_WAT_MAXMU,112,22,30,12,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "Water Dimensionless constant, nv",IDC_STATIC,13,45,81,16
+    EDITTEXT        IDC_EDIT_WAT_NV,112,49,30,12,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "Water Time constant, Landa",IDC_STATIC_WAT_LANDA,15,111,93,8
+    EDITTEXT        IDC_EDIT_WAT_LANDA,112,109,30,12,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "Water Dimensionless constant, n  ( 0 < n < 1 )",IDC_STATIC_WAT_N,15,129,86,18
+    EDITTEXT        IDC_EDIT_WAT_N,112,132,30,12,ES_CENTER | ES_AUTOHSCROLL
+    CONTROL         "Water Shear Thinning",IDC_CHECK_WAT_SHEAR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,92,83,8
+    GROUPBOX        "Static Oil Viscosity",IDC_STATIC,156,7,143,63
+    GROUPBOX        "Oil Shear Thinning",IDC_STATIC,156,77,143,73
+    EDITTEXT        IDC_EDIT_OIL_MAXMU,263,22,30,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_OIL_NV,263,46,30,12,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "Oil Time constant, Landa",IDC_STATIC_OIL_LANDA,166,112,88,8
+    EDITTEXT        IDC_EDIT_OIL_LANDA,261,110,30,12,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "Oil Dimensionless constant, n  ( 0 < n < 1 )",IDC_STATIC_OIL_N,166,129,79,18
+    EDITTEXT        IDC_EDIT_OIL_N,261,133,30,12,ES_CENTER | ES_AUTOHSCROLL
+    CONTROL         "Oil Shear Thinning",IDC_CHECK_OIL_SHEAR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,168,93,83,8
+    LTEXT           "Oil Maximum Solution Viscosity, cP",IDC_STATIC,163,22,71,17
+    LTEXT           "Oil Dimensionless constant, nv",IDC_STATIC,163,44,72,17
+END
+
+IDD_BLOCKERDLG_DIALOG DIALOGEX 0, 0, 194, 178
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Blocking Properties"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,42,157,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,102,157,50,14
+    GROUPBOX        "Water Resistance Factors",IDC_STATIC,7,8,180,69
+    GROUPBOX        "Oil Resistance Factors",IDC_STATIC,7,81,180,69
+    LTEXT           "Static",IDC_STATIC_WATER_RF,13,21,168,52,SS_NOTIFY | WS_BORDER
+    LTEXT           "",IDC_STATIC_OIL_RF,13,94,168,52,SS_NOTIFY | WS_BORDER
+END
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 203, 178
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Squeeze 12"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,76,157,50,15
+    ICON            IDR_MAINFRAME,IDC_STATIC,7,7,20,20
+    CTEXT           "Version 12",IDC_STATIC,70,10,62,8
+    CTEXT           "May 2022",IDC_STATIC,70,22,62,9
+    CTEXT           "Pressurised Layers (Preliminary Cross Flow)",IDC_STATIC,9,73,186,9
+    CTEXT           "Isotherm History Matching. Various Algorithms",IDC_STATIC,9,55,186,9
+    CTEXT           "Scale Inhibitor Adsorption Enhancing Additive (Bridging)",IDC_STATIC,9,91,186,9
+    CTEXT           "Updated Graphical Interface",IDC_STATIC,9,109,186,9
+    CTEXT           "Automatic Squeeze Design Optimisation",IDC_STATIC,9,37,186,9
+    CTEXT           "Two-phaseTemperature and Viscosity Dependence",IDC_STATIC,9,127,186,9,0,WS_EX_TRANSPARENT
+    CTEXT           "Two-phaseTemperature and Viscosity Dependence",IDC_STATIC,9,145,186,9,0,WS_EX_TRANSPARENT
+END
+
+IDD_FILEOPEN_DLG DIALOG 0, 0, 141, 45
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Squeeze 8"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CTEXT           "File Not Open  erererrerererererere",IDC_STATIC_FILE,7,15,126,12
+END
+
+IDD_DLG_OUTPUT_TIME DIALOG 0, 0, 206, 156
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Time Dependent Output File"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,47,134,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,103,134,50,14
+    CONTROL         "Water Total Flow Rate",IDC_CHECK_WATER_TOTAL_FLOW,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,37,89,12
+    CONTROL         "SI Mass Produced",IDC_CHECK_WATER_MASS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,73,70,12
+    CONTROL         "Layer Flow Rate",IDC_CHECK_WATER_FLOW_LAYER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,65,6,72,12
+    CONTROL         "Water Cut",IDC_CHECK_WATERCUT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,6,49,12
+    GROUPBOX        "Water Phase",IDC_STATIC,3,23,98,105
+    CONTROL         "Oil Total Flow Rate",IDC_CHECK_OIL_TOTAL_FLOW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,114,36,74,12
+    CONTROL         "SI Mass Produced",IDC_CHECK_OIL_MASS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,114,72,70,12
+    GROUPBOX        "Oil Phase",IDC_STATIC,106,23,98,104
+    CONTROL         "Total Return Conc.",IDC_CHECK_WATER_CONC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,55,74,12
+    CONTROL         "Total Return Conc.",IDC_CHECK_OIL_CONC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,114,54,70,12
+    CONTROL         "Total Water Produced",IDC_CHECK_WATER_CUM,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,91,85,12
+    CONTROL         "Total Oil Produced",IDC_CHECK_OIL_CUM,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,114,90,82,12
+    CONTROL         "Water Comp. Pen..",IDC_CHECK_WATER_PEN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,109,85,12
+    CONTROL         "Oil Comp. Pen..",IDC_CHECK_OIL_PEN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,114,108,85,12
+    CONTROL         "Total Mass",IDC_CHECK_TOT_MASS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,143,6,51,12
+END
+
+IDD_WARNINGS DIALOG 0, 0, 192, 69
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Warnings"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,70,50,50,15
+    ICON            IDR_MAINFRAME,IDC_SQVI_ICON,27,7,20,20
+    LTEXT           "Squeeze VI Version 6.2.",IDC_STATIC_SQVI,57,14,102,10
+    LTEXT           "Saturations",IDC_STATIC_SAT,25,33,135,8
+    LTEXT           "Permeability",IDC_STATIC_KABS,25,34,135,8
+    LTEXT           "Porosity",IDC_STATIC_PHI,28,33,135,8
+    LTEXT           "Height",IDC_STATIC_HEIGHT,28,33,135,8
+END
+
+IDD_DIALOG_EDGE_CONC DIALOGEX 0, 0, 215, 85
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Squeeze 10"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Continue",IDOK,44,65,50,14
+    PUSHBUTTON      "Abort",IDCANCEL,103,65,50,14
+    ICON            IDR_MAINFRAME,IDC_STATIC,10,23,20,20
+    LTEXT           "Static",IDC_STATIC_EDGE_CONC,44,31,143,19
+    LTEXT           "Warning !!!",IDC_STATIC,45,13,111,10
+END
+
+IDD_CANA_DIALOG DIALOGEX 0, 0, 181, 145
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "[Ca] Adsorption based on [Na]"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,36,128,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,96,128,50,14
+    LTEXT           "[Ca] adsorption dependent on [Na]",IDC_STATIC,35,3,112,10
+    GROUPBOX        "Initial Concentrations in the core/reservoir",IDC_STATIC,4,17,173,30
+    LTEXT           "[Ca]",IDC_STATIC,14,32,13,8
+    LTEXT           "[Na]",IDC_STATIC,107,32,15,9
+    EDITTEXT        IDC_EDIT_FLUIDRHO,35,30,41,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_NA_CONC,128,30,41,12,ES_CENTER | ES_AUTOHSCROLL
+    GROUPBOX        "Adsorption Properties",IDC_STATIC,4,54,173,70
+    LTEXT           "Low [Na]",IDC_STATIC,7,84,29,8
+    LTEXT           "High [Na]",IDC_STATIC,7,104,31,8
+    CONTROL         "Freunlich",IDC_RADIO_FREUNDLICH,"Button",BS_AUTORADIOBUTTON | WS_GROUP,36,67,52,9
+    CONTROL         "Langmuir",IDC_RADIO_LANGMUIR,"Button",BS_AUTORADIOBUTTON,104,67,52,9
+    EDITTEXT        IDC_EDIT_LOWADS1,96,81,31,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_LOWADS2,139,81,31,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HIGHADS1,96,102,31,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HIGHADS2,139,102,31,12,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "a",IDC_STATIC_LOWADS1,88,84,8,8
+    LTEXT           "b",IDC_STATIC_LOWADS2,132,84,8,8
+    LTEXT           "a",IDC_STATIC_HIGHADS1,88,104,8,8
+    LTEXT           "a",IDC_STATIC_HIGHADS2,132,104,8,8
+    EDITTEXT        IDC_EDIT_LOW_NA,45,81,36,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HIGH_NA,45,102,36,12,ES_CENTER | ES_AUTOHSCROLL
+END
+
+IDD_MUTSOLV_DIALOG DIALOG 0, 0, 191, 157
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "New SI Isotherm with Additive"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,36,140,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,96,140,50,14
+    GROUPBOX        "New Irreducible Water and Oil Saturation",IDC_STATIC_IRREDUCIBLE,5,6,184,38
+    LTEXT           "New Swi",IDC_STATIC_NEWSWI,12,27,30,8
+    LTEXT           "New Sro",IDC_STATIC_NEWSRO,93,27,30,9
+    EDITTEXT        IDC_EDIT_NEW_SWI,46,25,41,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_NEW_SRO,126,25,41,12,ES_CENTER | ES_AUTOHSCROLL
+    GROUPBOX        "Adsorption Properties",IDC_STATIC,3,46,186,91
+    EDITTEXT        IDC_EDIT_ADS2,120,98,31,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ADS1,120,80,31,12,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "b",IDC_STATIC_MUT_ADS2,105,99,8,8
+    LTEXT           "a",IDC_STATIC_MUT_ADS1,105,81,8,8
+    CONTROL         "Adsorption Alteration",IDC_CHECK_MADSO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,58,81,9
+    CONTROL         "Freundlich",IDC_RADIO_FREU,"Button",BS_AUTORADIOBUTTON | WS_GROUP,28,82,63,10
+    CONTROL         "Langmuir",IDC_RADIO_LANG,"Button",BS_AUTORADIOBUTTON,28,98,63,10
+    CONTROL         "Table",IDC_RADIO_TABLE,"Button",BS_AUTORADIOBUTTON,28,116,63,10
+    EDITTEXT        IDC_EDIT_TABLE,106,115,56,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MAX_ADS,152,60,31,12,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "Max Ads Additive, mg/L of Rock",IDC_STATIC_MAX_ADS,101,53,47,25
+    CONTROL         "Irreversible",IDC_CHECK_IRR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,107,64,50,10
+    CONTROL         "Max Add Adsorption",IDC_CHECK_MODADD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,71,77,10
+END
+
+IDD_OPT DIALOG 0, 0, 160, 65
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "History Matching ...."
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Process on the way !!!",IDC_STATIC_OPT,13,13,140,9
+    LTEXT           "Check results in ",IDC_STATIC_FILENAME,13,26,140,9
+    PUSHBUTTON      "OK",IDC_BUTTON_OK,54,41,52,15
+END
+
+IDD_DIALOG_ISOTHERM_FITTING DIALOGEX 0, 0, 178, 176
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Isotherm Fitting"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Run",IDOK,33,156,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,89,156,50,14
+    CTEXT           "Population Size",IDC_STATIC_POPULATION,13,7,55,12,NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_POPULATION,72,7,20,12,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "Generations",IDC_STATIC_GENERATIONS,15,23,41,12
+    EDITTEXT        IDC_EDIT_GENERATIONS,63,22,20,12,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "Percentage of profile",IDC_STATIC_GENERATIONS2,14,41,70,12
+    EDITTEXT        IDC_EDIT_TRAINPER,87,39,28,12,ES_CENTER | ES_AUTOHSCROLL
+    GROUPBOX        "Range of Parameter Space",IDC_STATIC,5,66,167,86
+    LTEXT           "k",IDC_STATIC_KMAX,13,86,22,12
+    EDITTEXT        IDC_EDIT_KMAX,75,84,28,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_NMAX,73,102,28,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_RMAX,76,121,28,12,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "n",IDC_STATIC_KMIN,11,102,22,12
+    EDITTEXT        IDC_EDIT_KMIN,123,84,28,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_NMIN,125,102,28,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_RMIN,121,120,28,12,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "r2",IDC_STATIC_KMIN4,11,121,22,12
+    EDITTEXT        IDC_EDIT_K_ORIG,36,82,28,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_N_ORIG,34,100,28,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_R_ORIG,37,119,28,12,ES_CENTER | ES_AUTOHSCROLL
+END
+
+IDD_PROGRESS_BAR DIALOGEX 0, 0, 254, 47
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Automatic Isotherm Matching"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_PROGRESS1,"msctls_progress32",PBS_SMOOTH | WS_BORDER,17,14,221,18
+END
+
+IDD_CHECKLISTBOX_GRAPHS_DIALOG DIALOGEX 0, 0, 613, 297
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTERMOUSE | WS_POPUP | WS_CAPTION
+CAPTION "Iostherm History Matching"
+FONT 8, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    PUSHBUTTON      "Finish",IDCANCEL,517,264,62,24
+    LTEXT           "Static",IDC_STATIC_GRAP_ISO,7,9,476,276,0,WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    LISTBOX         IDC_LIST_ISOTHERMS,490,18,117,121,LBS_SORT | LBS_OWNERDRAWFIXED | LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "Update Graph",ID_UPDATE,511,231,77,20
+    EDITTEXT        IDC_EDIT_YMAX,569,187,29,12,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "Y-Axis",IDC_STATIC,502,189,20,9
+    EDITTEXT        IDC_EDIT_XMAX,569,170,29,12,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "X-Axis",IDC_STATIC,502,173,20,9
+    CONTROL         "   Y Axis Log Scale",IDC_CHECK_YLOGSCALE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,505,212,74,8
+    EDITTEXT        IDC_EDIT_YMIN,531,188,29,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_XMIN,531,171,29,12,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "Min",IDC_STATIC,535,156,20,9
+    LTEXT           "Max",IDC_STATIC,572,157,20,9
+    GROUPBOX        "Graphics",IDC_STATIC,486,146,126,115
+    GROUPBOX        "Isotherms",IDC_STATIC,486,6,125,139
+END
+
+IDD_IOSTHERM_DERIVATION_GRAPH_DIALOG DIALOGEX 0, 0, 671, 315
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTERMOUSE | WS_POPUP | WS_CAPTION
+CAPTION "Isotherm Derivation"
+FONT 8, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    PUSHBUTTON      "Finish",IDCANCEL,531,287,67,21
+    LTEXT           "Static",IDC_STATIC_GRAPH_ISO_DER_SIM_CHECK,15,17,444,249,0,WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    DEFPUSHBUTTON   "Automatic",ID_AUTOMATIC,590,226,59,15
+    GROUPBOX        "Isotherms",IDC_STATIC,469,6,201,302
+    LTEXT           "Y-Axis",IDC_STATIC,481,214,20,9
+    LTEXT           "X-Axis",IDC_STATIC,481,198,20,9
+    LTEXT           "Min",IDC_STATIC,522,183,20,9
+    LTEXT           "Max",IDC_STATIC,565,183,20,9
+    GROUPBOX        "Isotherm Validation",IDC_STATIC,7,6,458,302
+    LTEXT           "Static",IDC_STATIC_GRAPH_ISO_DER_CHECK,475,18,188,159,SS_NOTIFY,WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_YMAX_ISO,559,210,34,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_XMAX,559,193,34,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_YMIN_ISO,516,209,34,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_XMIN,515,193,34,12,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "Move Isotherm",IDC_STATIC,483,230,61,9
+    EDITTEXT        IDC_EDIT_ISO_MOVING,542,228,34,12,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "Isotherm Automatically Adjusted by",IDC_STATIC_AUTO,481,250,153,9
+    LTEXT           "Y-Axis",IDC_STATIC,157,295,20,9
+    LTEXT           "X-Axis",IDC_STATIC,157,280,20,9
+    LTEXT           "Min",IDC_STATIC,192,269,20,9
+    LTEXT           "Max",IDC_STATIC,235,269,20,9
+    EDITTEXT        IDC_EDIT_YMAX_SIM,229,294,34,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_XMAX_SIM,229,279,34,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_YMIN_SIM,186,293,34,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_XMIN_SIM,185,279,34,12,ES_CENTER | ES_AUTOHSCROLL
+    CONTROL         "Y Log Scale",IDC_CHECK_YLOG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,285,285,56,11
+    DEFPUSHBUTTON   "Validate Isotherm",ID_BUTTON_VAL_ISO,487,263,67,21
+    DEFPUSHBUTTON   "Save Isotherm",ID_BUTTON_SAVE_ISO,577,263,67,21
+    CONTROL         "Fix Graph Limits",IDC_CHECK_FIX_LIMITS,"Button",BS_AUTOCHECKBOX | BS_NOTIFY | WS_TABSTOP,599,201,62,11
+END
+
+IDD_OPTIMISATION_DLG DIALOGEX 0, 0, 251, 137
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Optimisation Parameters"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,29,119,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,119,119,50,14
+    LTEXT           "Static",IDC_STATIC_OPTIMISATION,10,11,219,108,SS_NOTIFY | WS_BORDER
+END
+
+IDD_DIA_ISO_PAR DIALOGEX 0, 0, 171, 130
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTERMOUSE | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Iostherm Matching Parameters"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK2,34,111,50,14
+    CTEXT           "Population Size",IDC_STATIC_POPULATION,8,14,55,12
+    EDITTEXT        IDC_EDIT_POP_SIZE,65,13,20,12,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "Generations",IDC_STATIC_GENERATIONS,90,14,41,12
+    EDITTEXT        IDC_EDIT_NUM_GEN,133,13,20,12,ES_CENTER | ES_AUTOHSCROLL
+    GROUPBOX        "Range of Parameter Space",IDC_STATIC,7,29,156,78
+    EDITTEXT        IDC_EDIT_K_ORIG,36,55,28,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_K_UP,79,55,28,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_K_LOW,124,55,28,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_N_ORIG,36,73,28,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_N_UP,79,73,28,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_N_LOW,124,73,28,12,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "k",IDC_STATIC_KMIN,21,56,8,12
+    LTEXT           "Original",IDC_STATIC_KMAX,39,43,29,12
+    EDITTEXT        IDC_EDIT_R_ORIG,36,93,28,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_R_UP,79,93,28,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_R_LOW,124,93,28,12,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "n",IDC_STATIC_KMIN2,20,76,8,12
+    LTEXT           "r2",IDC_STATIC_KMIN3,20,93,8,12
+    LTEXT           "Upper",IDC_STATIC_KMAX2,84,42,29,12
+    LTEXT           "Lower",IDC_STATIC_KMAX4,129,41,31,9
+    DEFPUSHBUTTON   "Cancel",IDCANCEL,86,111,50,14
+END
+
+IDD_DIALOG_OPT_OUTPUT DIALOGEX 0, 0, 371, 335
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Optimisation Results"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "CLOSE",IDOK,143,317,88,17
+    PUSHBUTTON      "Cancel",IDCANCEL,316,321,50,14,NOT WS_VISIBLE
+    LTEXT           "Static",IDC_STATIC_PARETO_GRAPH,64,7,242,188,0,WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    LTEXT           "Static",IDC_STATIC_DESIGNS,12,232,336,74,SS_NOTIFY | WS_BORDER
+    COMBOBOX        IDC_COMBO_XAXIS,115,201,53,86,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_YAXIS,258,199,53,86,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "X-Axis",IDC_STATIC_XAXIS,60,202,20,9,SS_NOTIFY
+    LTEXT           "Y-Axis",IDC_STATIC_YAXIS,203,203,20,9,SS_NOTIFY
+    SCROLLBAR       IDC_SCROLLBAR_HOR,12,306,336,9
+    SCROLLBAR       IDC_SCROLLBAR_VER,348,219,10,96,SBS_VERT
+    LTEXT           "Static",IDC_STATIC_DESIGNS_HEADER,12,219,336,13,SS_NOTIFY | WS_BORDER
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ISO_TABLE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 117
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 171
+    END
+
+    IDD_BASIC_2PHASE, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 406
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 391
+    END
+
+    IDD_BASIC_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 238
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 270
+    END
+
+    IDD_GRAPHICS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 209
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 111
+    END
+
+    IDD_GRAPHICS_BLOCK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 209
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 111
+    END
+
+    IDD_DIALOG_SIM_RUN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 166
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 38
+    END
+
+    IDD_STAGE_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 196
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 239
+    END
+
+    IDD_VISCODLG_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 304
+        BOTTOMMARGIN, 166
+    END
+
+    IDD_BLOCKERDLG_DIALOG, DIALOG
+    BEGIN
+    END
+
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 196
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 171
+    END
+
+    IDD_FILEOPEN_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 134
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 38
+    END
+
+    IDD_DLG_OUTPUT_TIME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 199
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 149
+    END
+
+    IDD_WARNINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 185
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 62
+    END
+
+    IDD_DIALOG_EDGE_CONC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 208
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 78
+    END
+
+    IDD_CANA_DIALOG, DIALOG
+    BEGIN
+    END
+
+    IDD_MUTSOLV_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 189
+        TOPMARGIN, 7
+    END
+
+    IDD_OPT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 153
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 62
+    END
+
+    IDD_DIALOG_ISOTHERM_FITTING, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 172
+    END
+
+    IDD_PROGRESS_BAR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 247
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 40
+    END
+
+    IDD_CHECKLISTBOX_GRAPHS_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 612
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 290
+    END
+
+    IDD_IOSTHERM_DERIVATION_GRAPH_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 670
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 308
+        HORZGUIDE, 165
+    END
+
+    IDD_OPTIMISATION_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 248
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 133
+    END
+
+    IDD_DIA_ISO_PAR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 164
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 127
+    END
+
+    IDD_DIALOG_OPT_OUTPUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 366
+        TOPMARGIN, 7
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_BASIC_DLG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_ABOUTBOX AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_OPT_OUTPUT AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_BLOCKERDLG_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_IOSTHERM_DERIVATION_GRAPH_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_BASIC_2PHASE AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\OV Grid DLL.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\OV Grid DLL.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP                  "res\\bitmap1.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU
+BEGIN
+    POPUP "Context Menu"
+    BEGIN
+        MENUITEM "IMAGE CONTROLS",              ID_POPUP32774
+        MENUITEM "Copy to clipboard",           ID_COPYTOCLIPBOARD
+        MENUITEM "Save Output",                 ID_SAVEOUTPUT
+        MENUITEM "Save Image",                  ID_SAVEIMAGE, GRAYED
+    END
+END
+
+IDR_MENU2 MENU
+BEGIN
+    POPUP " "
+    BEGIN
+        MENUITEM "Save Design",                 ID__SAVEDESIGN
+        MENUITEM "Export Table",                ID__EXPORTTABLE
+        MENUITEM "Export Pareto Front",         ID__EXPORTPARETOFRONT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "&About Squeeze VI..."
+END
+
+#endif    // English (United Kingdom) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\OV Grid DLL.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

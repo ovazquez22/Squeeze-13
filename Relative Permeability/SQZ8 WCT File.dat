@@ -1,0 +1,98 @@
+SQZV6.1
+File build from Excel Macro										
+Watercut History Matching										
+iModel      nEcho       nDebug 
+3           1           1 
+nComp	nLay	UnitSpec
+1		3			C
+Rwell(ft)   Rmax(ft)
+0.1200      20.0000 
+Height(ft)  Phi         EffPerm(md)
+10.2000     0.3080      725 
+17.8000     0.2880      1591 
+28.6000     0.3240      3093 
+Type	 RelPerm File	 Swi 
+  1	 WCTRelPerm.txt		 0.1800      
+Type	 RelPerm File	 Swi 
+  1	 WCTRelPerm.txt		 0.2173      
+Type	 RelPerm File	 Swi 
+  1	 WCTRelPerm.txt		 0.4456      
+MUw       MUo 
+0.3800      2.4500     
+Role(Trac.=0,Inh=1,Visc.=2,Bloc.=3,MutSol.=4) Comp  1
+0
+kChem       kTemp 
+1           0
+MTrans 		 K
+0 		 0.000000
+IsoSpec	  TolItr
+0           1.0000e-008
+Well Friction 0 = NO , 1 = YES
+0 
+nR          Nstages     NIters      Nfreq       NoTstep     IsCon       IsTmp       
+30          7           15          10          0           0           0 
+Qw(bpm/bpd) watFrac     tspan(h/d)  dt(h/d)    CIw(ppm)   CIo(ppm)   TI(degC)    OperCode    nChage      nOpen       nMethod    
+1055.2631   1.0000      21.0000     0.00500000  	0.0000       0.0000       20.0000     3           0           0           0          
+ProdFw
+0.000000 0.049782 0.701128 
+662.0666    1.0000      17.0000     0.00500000  	0.0000       0.0000       20.0000     3           0           0           0          
+ProdFw
+0.008292 0.013550 0.556399 
+539.5416    1.0000      46.0000     0.00500000  	0.0000       0.0000       20.0000     3           0           0           0          
+ProdFw
+0.000000 0.033603 0.546578 
+788.8157    1.0000      15.0000     0.00500000  	0.0000       0.0000       20.0000     3           0           0           0          
+ProdFw
+0.000000 0.000000 0.564232 
+619.4013    1.0000      13.0000     0.00500000  	0.0000       0.0000       20.0000     3           0           0           0          
+ProdFw
+0.000000 0.000000 0.575160 
+533.4327    1.0000      22.0000     0.00500000  	0.0000       0.0000       20.0000     3           0           0           0          
+ProdFw
+0.000000 0.029182 0.528330 
+528.2003    1.0000      8.0000      0.00500000  	0.0000       0.0000       20.0000     3           0           0           0          
+ProdFw
+0.034194 0.077499 0.559029 
+nLife       kPlot 
+5           0 
+Clife(ppm) 
+20.0000     15.0000     10.0000     5.0000      3.0000 
+GrafMic
+4.5000
+kCrange	   kGraf1	   kGraf2	   kGraf3
+0           1           0           0
+Field Squeeze Return Data 
+nPts 
+0 
+nOlds 
+0 
+Distance Dependent OutputFile 0 = NO, 1 = Yes  
+0
+Time Dependent OutputFile 0 = NO, 1 = Yes  
+1
+bWC bTQw bTQo bTCw bTCo bSIw bSIo bLQw bLQo bCPw bCPo bPw bPo bMass, 0 = NO, 1 = Yes
+  1   0   0   0   0   0   0   0   0   0   0   0   0   0
+Optimization algorithms
+HC = 0, PSO = 1, RCGA = 2, SGA = 3
+1
+Random initial population = 0; HC = 1
+0
+Population
+50
+Length of chromosome
+30
+Generations
+20
+X-over Probability, pcross
+0.600000
+Mutation Probability, pmut
+0.005000
+Misfit type, = 0 Standard, = 1 Natural Logarithm
+1
+Percentage of profile for misfit calculation
+1.000000
+Mod in days 0 = NO, 1 = Yes  
+0 1.000000
+kMax        kmin        nMax        nMin        rMax        rMin       
+3000.00     1.00        1.00        0.00        1.00        0.00       
+

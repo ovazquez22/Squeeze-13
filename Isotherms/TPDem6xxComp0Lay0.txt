@@ -1,0 +1,3 @@
+NIso
+-858993460 
+Ciso(ppm)    ADiso(mg/L rock)

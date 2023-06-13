@@ -1,0 +1,95 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.6 [en-gb]C-CCK-MCD NetscapeOnline.co.uk  (Win95; I) [Netscape]">
+   <title>Constants and properties</title>
+</head>
+<body background="backgrnd.gif">
+
+<h1>
+Editing Properties, Units and Constants</h1>
+The property, units and constants list boxes in the Constants and Units
+Conversions dialog boxes each have an adjacent button labelled <b>Edit</b>.
+To modify the properties database press the Edit button next to the properties,
+units or constants list boxes as required. A dialog appears which allows
+you to Add, Delete or Rename units, properties or constants.
+<p><img SRC="editprop.gif" height=322 width=373>
+<p>For constants you can also modify an existing value and for units you
+can update the factor or offset (for example if you have access to more
+accurate data). Select the unit, constant or property you want to rename
+or delete in the list box.
+<p><img SRC="editcnst.gif" height=326 width=349>
+<p>You can use the <a href="findprops.htm">Find button</a> to search for
+a property or units from the properties database.
+<br>&nbsp;
+<h2>
+Saving Properties, Units and Constants</h2>
+
+<p><br>You can save your new properties, units or constants by clicking
+the "opt" button, selecting the "Data" tab and clicking the Save Properties
+button and giving a file name.
+<br>&nbsp;
+<p><img SRC="optdata.gif" height=293 width=347>
+<p>You can subsequently load a set of properties, units and constants using
+the Load button. If you save the file with the name DEFAULT.PRP in the
+default directory, your file will be loaded automatically in future. The
+file FACTORY.PRP is the properties file which is supplied with the software
+and should not be overwritten. If you want to revert to the properties
+as supplied, simply delete or rename your DEFAULT.PRP file; FACTORY.PRP
+is automatically loaded if DEFAULT.PRP is absent. If you have saved a lot
+of data in this way, you might want to make sure you have a backup copy
+of your DEFAULT.PRP file.
+<p>If you have a property or a set of units which is of general interest,
+or perhaps specific to your industry, you can <a href="http://www.calculator.org/units.html">submit
+them at our website</a>. We can then add them to the next release of the
+properties database.
+<br>&nbsp;
+<h2>
+Loading External Properties, Units and Constants</h2>
+The calculator has a number of properties and constants built in. Additional
+properties and constants are stored in an external file, as described above.
+You can obtain these files externally or distribute your own. Also, to
+save application loading time if this becomes significant, you can avoid
+loading the more detailed sets of properties until they are needed.
+<p>To prevent automatic loading of properties and constants from an external
+file, ensure you do not have a file called FACTORY.PRP or DEFAULT.PRP.
+<p>From time to time we update the properties database, and you can <a href="http://www.calculator.org/properties.html">query
+the database online</a>. There is also a link to download the latest version
+of the database.
+<br>&nbsp;
+<h2>
+Loading Properties, Units and Constants from a text file</h2>
+It is possible to read a text file containing properties, units and constants.&nbsp;
+Some care is needed because the error checking is not very thorough.&nbsp;
+You also need to ensure that the property name matches exactly any which
+already exist in the database, otherwise you will get duplicate entries.&nbsp;
+Please note that this format may well change in a future version of the
+software.&nbsp; The recommended way to add data is to use the editing features
+of the software described above.
+<p>An example of the format is given below, in which a new property is
+created with temperature units.&nbsp; A property is introduced by a line
+starting with "P:" followed by the name of the unit.&nbsp; A unit is identified
+by a line beginning with U followed by a colon, and then the name of the
+unit.&nbsp;&nbsp; The SI conversion factor follows and then the offset,
+if any, each value delimited by a backwards stroke.&nbsp; Constants are
+preceded by "C:".
+<br>&nbsp;
+<pre>P:Surface temperature</pre>
+
+<pre>U:K</pre>
+
+<pre>U:C\1.0\-273.15</pre>
+
+<pre>U:R\0.555555</pre>
+
+<pre>U:F\0.555555\-459.67</pre>
+
+<pre>U:X\1.234</pre>
+
+<pre>C:Sun\6000.0</pre>
+
+<p><br>The file should be given the extension "prp" and can then be read
+in using the appropriate "Load Properties" button on the Options/Data tab.
+</body>
+</html>

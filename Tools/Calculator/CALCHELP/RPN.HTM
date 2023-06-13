@@ -1,0 +1,85 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.6 [en-gb]C-CCK-MCD NetscapeOnline.co.uk  (Win95; I) [Netscape]">
+   <meta name="keywords" content="RPN, reverse, polish, notation, bodmas, precedence, arithmetic, Lukasiewicz, parentheses, hewlett, packard">
+   <meta name="description" content="Information about RPN (Reverse Polish Notation), what it is, how and why it came to be developed.   How RPN calculators work.">
+   <title>Reverse Polish Notation -- RPN facts</title>
+</head>
+<body>
+
+<h1>
+What is Reverse Polish Notation?</h1>
+<img SRC="rpn.jpg" ALT="RPN calculator buttons" height=128 width=182 align=RIGHT>
+When you are at school you learn that different arithmetic operators have
+different precedence, although that may not be the exact phrase the teacher
+uses. You are probably given a mnemonic such as "My Dear Aunt Sally" (meaning
+<b>M</b>ultiplication,
+<b>D</b>ivision,
+<b>A</b>ddition, <b>S</b>ubtraction) to tell you the order in which to
+do sums. For example, if you are given:
+<p>1 + 2 x 3 = ?
+<p>you know to multiply 2 by 3 before adding the 1. Early pocket calculators
+were not acquainted with Aunt Sally, and would evaluate this expression
+as 9.
+<p>Another school-days mnemonic, BODMAS, tells us to attend to the bracketed
+expressions first, followed by the usual algebraic operator precedence.
+Brackets (or more properly <i>parentheses</i>) remove any ambiguity about
+the order of evaluation of expressions. Most complex expressions could
+not be expressed without brackets, and they are often used in computer
+programming even when they are not strictly required, simply to eliminate
+confusion. For example:
+<p>(1+2) x 3 = ?
+<p>is guaranteed to evaluate to 9, whatever precedence rules are applied
+(or if the programmer has forgotten them).
+<br>The BODMAS rule is applied recursively; brackets can contain other
+complex expressions which themselves contain brackets, and so on.
+<p>In the early days of electronic calculators these rules proved fiendishly
+difficult to implement in calculator hardware. But calculator designers
+at Hewlett-Packard realized that a radically different method of defining
+the arithmetic, invented in the 1920's by Polish mathematician Jan Lukasiewicz
+(1878-1956) for symbolic logic, could be used to simplify the electronics
+at the expense of a little learning by the user. In the 1960's that would
+be regarded as a reasonable trade-off. For most calculator users of the
+time, the alternative was the error prone practice of writing down intermediate
+results. The Hewlett-Packard engineers called their calculator logic Reverse
+Polish Notation (or RPN) in recognition of its inventor.
+<p>Using RPN, it is possible to express an arbitrarily complex calculation
+without using brackets at all. In RPN the simple example above becomes:
+<p>3 2 1 + x
+<p>Like a sentence in German, all the verbs come at the end. This notation
+may look strange at first, and clearly if the numbers where entered as
+shown you would get the number three hundred and twenty one!&nbsp; To make
+a this work you need an extra key that tells the calculator when you have
+finished entering each number. On most RPN calculators this is called the
+"Enter" key and fulfils a similar function to an equals key on a conventional
+calculator but in reverse. So the example would actually be input as:
+<p>3 enter 2 enter 1 + x
+<p>You need to think of entering numbers as being like putting plates into
+one of those spring loaded plate stacking trolleys you get in canteens.
+Every time you enter a number, it is pushed onto the stack. When you eventually
+start using arithmetic operators, numbers start "popping" off the stack
+as needed. You can also push more numbers onto the stack. At the end of
+the calculation you will have "used up" all the numbers and the stack will
+be empty.
+<p>A calculator using conventional logic will internally convert the expression
+to the RPN form above.&nbsp; This may be achieved by parsing the bracketed
+expression before carrying out the calculation.&nbsp; But more likely the
+calculator logic will be pushing numbers down onto the stack every time
+a pair of brackets is opened or is implied by the operator precedence.
+So in effect an RPN calculator is offloading this work to the calculator
+user, resulting in simpler logic design in the calculator.&nbsp; Nowadays
+the design issues of using conventional bracket notation in an electronic
+calculator are trivial, and yet users of RPN calculators rarely seem to
+want to move over to the more conventional algebraic logic.&nbsp; Although
+RPN seems strange to the uninitiated, people who overcome the initial hurdle
+find it a powerful and elegant tool which is ultimately easier to use.&nbsp;
+Luckily for RPN devotees, Hewlett-Packard continues to develop RPN calculators,
+such as the <a href="http://www.calculator.org/calcs.html">HP32</a> and
+some of the latest models have the capability of both RPN and algebraic
+logic. And of course <a href="http://www.calculator.org/download.html">Calc98</a>
+also supports RPN as a user configurable option.
+<br>&nbsp;
+</body>
+</html>

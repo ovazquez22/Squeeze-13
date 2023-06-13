@@ -1,0 +1,104 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.6 [en-gb]C-CCK-MCD NetscapeOnline.co.uk  (Win95; I) [Netscape]">
+   <meta name="Author" content="Bill Ayers">
+   <title>Complex Numbers</title>
+</head>
+<body background="backgrnd.gif">
+
+<h1>
+Complex Numbers</h1>
+You can carry out complex arithmetic by setting the number of I-direction
+cells to exactly two, and checking the Complex box in the matrix page of
+the Options dialog.
+<p><img SRC="optcmplx.gif" BORDER=0 height=295 width=346>
+<p>If the number of I-cells is set to some other value you are not allowed
+to leave the dialog with Complex checked.&nbsp; If you set the number of
+J-cells greater than one you can work with a one-dimensional array of complex
+numbers.
+<p><img SRC="complex.gif" height=235 width=453>
+<p>With complex numbers enabled, the column headings in the display are
+"x" and "iy" to indicate the real and imaginary parts of each number.&nbsp;
+On a desktop PC, you may want to re-configure the keypads to a landscape
+layout for complex number arithmetic, because of the extra width needed
+for the display.&nbsp; You can then adjust the size of the display so that
+scroll bars are not needed.
+<p>You can perform simple arithmetic on complex numbers, or perform exponentiation
+and logarithm functions and transcendental functions.&nbsp; To enter numbers
+select the real or imaginary parts as you would array elements as described
+in the <a href="matrix.htm">section on arrays and matrices</a>.&nbsp;&nbsp;
+If you select the real or imaginary part of a complex number, the arithmetic
+logic acts on the whole of the complex number, not just the part selected.
+<p>You can carry out "normal" calculations on real numbers as normal, simply
+by setting the imaginary part to zero.&nbsp; Of course in certain cases
+this may give rise to a complex number, for example, famously:
+<p>Enter 1, then change its sign ("<b>+/-</b>").&nbsp; Result:
+<br>&nbsp;
+<table BORDER COLS=2 WIDTH="300" HEIGHT="30" BGCOLOR="#000099" >
+<tr ALIGN=CENTER BGCOLOR="#008080">
+<td><b><font color="#000000">x</font></b></td>
+
+<td><b><font color="#000000">iy</font></b></td>
+</tr>
+
+<tr>
+<td><b><font color="#66FFFF">-1.</font></b></td>
+
+<td><b><font color="#66FFFF">0.</font></b></td>
+</tr>
+</table>
+
+<p>Now take the square root.&nbsp; Result:
+<br>&nbsp;
+<table BORDER COLS=2 WIDTH="300" HEIGHT="30" BGCOLOR="#000099" >
+<tr>
+<td><b><font color="#66FFFF">0.</font></b></td>
+
+<td><b><font color="#66FFFF">1.</font></b></td>
+</tr>
+</table>
+
+<p>Some examples are given below:
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<h3>
+Basic complex arithmetic.</h3>
+The arithmetic functions act in the same way as for real numbers.&nbsp;
+Complex addition is the same as array addition, but multiplication and
+division are slightly more complicated.&nbsp; For example:
+<p>(x<sub>1 </sub>+ i.y<sub>1</sub>)(x<sub>2</sub> + i.y<sub>2</sub>)&nbsp;
+=&nbsp; x<sub>1</sub>x<sub>2</sub> + i.x<sub>1</sub>y<sub>2</sub> + i.x<sub>2</sub>y<sub>1</sub>
++ i <sup>2</sup>.y<sub>1</sub>y<sub>2</sub>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+= (x<sub>1</sub>x<sub>2</sub> -y<sub>1</sub>y<sub>2</sub>) + i.(x<sub>1</sub>y<sub>2</sub>
++ x<sub>2</sub>y<sub>1</sub>)
+<h3>
+Complex plane.</h3>
+To convert from real and imaginary components to modulus and argument in
+the complex plane (Argand diagram), use the normal <b>r-p</b> and <b>p-r</b>
+buttons.&nbsp; These are obtained by using the shift key when they replace
+the "+" and "-" arithmetic buttons.&nbsp; Once converted, the calculator
+does not "know" the values are in polar co-ordinates, and you must convert
+back to cartesian form to continue calculations.&nbsp;&nbsp; The argument
+will be expressed in degrees, radians or gradients depending on the angle
+mode selected.
+<p>Example:
+<p>Visualizing complex numbers in the complex plane is a powerful way of
+thinking about the real and imaginary components of numbers.&nbsp;&nbsp;
+The behaviour of arithmetic operations can be grasped more easily by considering
+the geometric equivalents in the complex plane.&nbsp; For example, to take
+the square root of a complex number, take the square root of the modulus
+and divide the argument by two.&nbsp; You can verify this by using the
+calculator to take the square root of various numbers and converting them
+to polar co-ordinates.
+<h3>
+Logarithmic functions.</h3>
+Logarithms, powers and roots work in the same way as for real numbers.
+<h3>
+Trigonometric functions.</h3>
+Trigonometric functions work in the same way as for real numbers.
+</body>
+</html>

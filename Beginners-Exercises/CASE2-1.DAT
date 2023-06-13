@@ -1,0 +1,18 @@
+SQZV5.0
+Case 2-1  - Well number 1 problem from Hong and Shuler (1987)
+An example of Case A inhibitor squeeze treatment
+iModel      nEcho       nDebug 
+2           1           1           
+Kiso      UnitSpec
+1            C
+Phi			CI(ppm)      VI(bbls)		VOP(bbls)		XK			XN
+0.2500      110000.0000 129.8000    2700.0000   300.0000    0.2600     
+Vmin(bbls)		Vmax(bbls)		Toler1
+1000.0000   1000000.0000 1.0000e-006
+nPtc      nSpace      nItMax
+100         1           50         
+nLife
+3 
+Clife(ppm) 
+5.0000      3.0000      1.0000      
+

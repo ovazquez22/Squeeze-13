@@ -1,0 +1,75 @@
+SQZV6.1
+Two Phase
+Demonstration
+iModel      nEcho       nDebug 
+3           0           0 
+nComp	nLay	UnitSpec
+1		1			C
+Rwell(ft)   Rmax(ft)
+0.5000      70.0000 
+Height(ft)  Phi         EffPerm(md)
+50.0000     0.2300      170 
+Type			 A			 Alpha			 B		 Beta		 Swc		 Sor		 Swi 
+  0 0.5000      3.0000      0.9000      2.0000      0.2100      0.1800      0.3000      
+MUw       MUo 
+0.9000      0.8000     
+Role(Trac.=0,Inh=1,Visc.=2,Bloc.=3,MutSol.=4) Comp  1
+1
+kChem       kTemp 
+1           0
+MTrans 		 K
+0 		 0.500000
+IsoSpec	  TolItr
+0           1.0000e-010
+IsoTyp Water Comp 1
+1
+Neqil2	  r2(or r4)(1/day)
+0           0.10000000
+A single isotherm for all layers
+k           n Water Comp 1
+500.0000    0.3000
+IsoTyp Oil Comp 1
+1
+Neqil2	  r2(or r4)(1/day)
+0           0.10000000
+A single isotherm for all layers
+k           n Oil Comp 1
+350.0000    0.3000
+Well Friction 0 = NO , 1 = YES
+0 
+nR          Nstages     NIters      Nfreq       NoTstep     IsCon       IsTmp       
+30          7           15          10          0           0           0 
+Qw(bpm/bpd) watFrac     tspan(h/d)  dt(h/d)    CIw(ppm)   CIo(ppm)   TI(degC)    OperCode    nChage      nOpen       nMethod    
+15.0000     1.0000      2.0000      0.00549000  	100000.0000  0.0000       20.0000     1           0           0           0          
+15.0000     1.0000      7.0000      0.00549000  	0.0000       0.0000       20.0000     2           0           0           0          
+1.0000      1.0000      5.0000      0.00549000  	0.0000       0.0000       20.0000     5           0           0           0          
+2400.0000   1.0000      30.0000     0.00206000  	0.0000       0.0000       20.0000     3           0           0           0          
+ProdFw
+0.001800 
+2400.0000   1.0000      30.0000     0.01000000  	0.0000       0.0000       20.0000     3           0           0           0          
+ProdFw
+0.018000 
+2400.0000   1.0000      190.0000    0.01000000  	0.0000       0.0000       20.0000     3           0           0           0          
+ProdFw
+0.180000 
+2400.0000   1.0000      190.0000    0.01000000  	0.0000       0.0000       20.0000     3           0           0           0          
+ProdFw
+0.800000 
+nLife       kPlot 
+0           0 
+GrafMic
+100000000000000000000.0000
+kCrange	   kGraf1	   kGraf2	   kGraf3
+0           0           0           0
+Field Squeeze Return Data 
+nPts 
+0 
+nOlds 
+1 
+Old File Names 
+TPDem4.out 
+Distance Dependent OutputFile 0 = NO, 1 = Yes  
+0
+Time Dependent OutputFile 0 = NO, 1 = Yes  
+0
+

@@ -1,0 +1,189 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.6 [en-gb]C-CCK-MCD NetscapeOnline.co.uk  (Win95; I) [Netscape]">
+   <title>Miscellaneous Functions</title>
+</head>
+<body background="backgrnd.gif">
+
+<h1>
+Miscellaneous Functions</h1>
+
+<h2>
+Stopwatch</h2>
+In <b>Time</b> mode, buttons are available to control a simple stopwatch.
+<p><img SRC="stopwtch.gif" ALT="stopwatch mode" >
+<p>To start the stopwatch use the <b>start</b> button, which results in
+increasing time being displayed. This continues until one of the other
+stopwatch buttons is pressed. The calculator cannot be used for other calculations
+unless the stopwatch is stopped or set to lap count.
+<p>To stop the watch, use the <b>stop</b> button. Pressing <b>start</b>
+again will cause the watch to resume from the time when it was stopped.
+Pressing the <b>lap</b> button while it is running freezes the display
+without stopping the watch. When the <b>start</b> button is pressed again,
+the display continues, showing the accumulated time. Once <b>lap</b> has
+been pressed the calculator can be used for other calculations, for example
+saving the lap time to a memory.
+<p>If <b>reset</b> is pressed, the stopwatch is set back to zero. The next
+time <b>start</b> is pressed the watch will commence at zero.
+<p>Pressing <b>count</b> starts a countdown from the currently displayed
+time. This can be the result of a previous stopwatch time, or the start
+time can be entered using the keypad. When the countdown reaches zero the
+stopwatch beeps if "Error Beep" is enabled (see <a href="modes.htm">Modes</a>).
+<p>The <b>now</b> button sets the display to the current (local) time at
+the instant the button is pressed.&nbsp; If you need a clock, click on
+<b>now</b>
+immediately followed by <b>start</b> which will result in a continuous
+display of the current time.
+<p>The accuracy of the stopwatch may be limited by the hardware device
+on which it is running. On WindowsCE devices the accuracy is nominally
+plus or minus 25mS. The stopwatch accuracy is maintained even if the device
+is switched off, or goes into the suspended state. The nominal accuracy
+on Windows is plus or minus 1 mS.
+<p>In time mode, some of the functions described above can be operated
+from the cursor (arrow) keys on your keyboard.&nbsp; On Pocket PC devices
+there is sometimes a cursor device which performs the same function - for
+example on the Compaq iPaq there is a four-way control pad which functions
+in the same way as the cursor keys.&nbsp; This makes it possible to operate
+the stopwatch single-handed.
+<p>The arrow keys are mapped as follows:
+<br>&nbsp;
+<br>&nbsp;
+<table BORDER COLS=2 WIDTH="42%" >
+<tr ALIGN=CENTER>
+<td><b>Cursor Key</b></td>
+
+<td><b>Stopwatch function</b></td>
+</tr>
+
+<tr ALIGN=CENTER>
+<td>> (right)</td>
+
+<td>Start</td>
+</tr>
+
+<tr ALIGN=CENTER>
+<td>&lt; (left)</td>
+
+<td>Stop</td>
+</tr>
+
+<tr ALIGN=CENTER>
+<td>^ (up)</td>
+
+<td>Lap</td>
+</tr>
+
+<tr ALIGN=CENTER>
+<td>V (down)</td>
+
+<td>Reset</td>
+</tr>
+</table>
+
+<h2>
+ASCII Converter</h2>
+In Binary, Octal, Hexadecimal or Base-N modes, you can use the <b>ascii</b>
+button to bring up a table of ASCII values. The values correspond to the
+number base being used. Selecting a value followed by <b>OK</b> will result
+in the value for that character being input to the calculator.&nbsp;&nbsp;
+Click on Cancel if you want to check an ASCII value without entering its
+value.
+<p><img SRC="ascii.gif" ALT="ASCII" >
+<p>The example above shows the decimal values for some of the ASCII codes.
+These were obtained by selecting Base-N mode with a base of 10, as explained
+in the <a href="modes.htm">Modes</a> section.
+<p>The control chars (0 - 31) show the control sequence and the control
+character name.
+<h2>
+Saving and Restoring Data</h2>
+The Data tab of the Options dialog is used to save and restore calculator
+data.
+<p><img SRC="optdata.gif" ALT="data" height=293 width=347>
+<p>Data values, including the contents of memory and arrays or matrices,
+can be saved to or loaded from file using the <b>Save</b> and <b>Load</b>
+buttons. They result in a further dialog box to select the filename.
+<p>Physical properties, constants and conversions <a href="editprop.htm">can
+also be saved or loaded</a>.
+<p>There is a also a button which allows you to choose the HTML browser
+which is invoked when you click on the <b>help</b> button.&nbsp; This can
+be used to find a browser if it cannot be located automatically, or if
+you prefer to choose a browser other than the default.
+<p>The default browser is located by searching for each of the following
+in turn:
+<ul>
+<li>
+The Windows HTML Help application (Hh)</li>
+
+<li>
+Microsoft Internet Explorer (iexplore.exe)</li>
+
+<li>
+Web viewer on older CE devices (webview.exe)</li>
+
+<li>
+Netscape Navigator (netscape.exe)</li>
+
+<li>
+Windows CE help (peghelp.exe)</li>
+</ul>
+If none of these turns up a browser, you are prompted to locate one.&nbsp;
+If all else fails, you can start your browser and open the file "index.htm"
+in the "CalcHelp" directory which will be in the directory where you installed
+the software.
+<br>&nbsp;
+<h2>
+<a NAME="factory"></a>Reverting to "Factory" Settings</h2>
+Whenever you change the calculator settings using the Options dialog, or
+close down the calculator, the configuration is saved to the Windows Registry.&nbsp;
+The Windows Registry is simply a mechanism for storing data which is part
+of the operating system.&nbsp; By using the registry, it is possible for
+an application to maintain a different set of configurations for different
+users.
+<p>Sometimes you may want to force the settings back to those when the
+software was first installed.&nbsp; This is analogous to the standard configuration
+of a piece of equipment when it leaves the factory, which are often called
+the "factory settings".&nbsp; Unfortunately, if you simply delete the directory
+containing the software and all the associated files, and then re-install
+the software, the "remembered" settings will still be in the registry and
+will be picked up when the application is started.
+<p>The registry is not part of the file system, and is quite difficult
+to modify.&nbsp;&nbsp; There is a special tool called <i>regedit</i> which
+usually has to be run by typing the name or finding the file in the Windows
+directory.&nbsp; It is not normally accessible from the Start menu or Control
+Panel.&nbsp; The reason is that the registry contains parameters which
+control the way the operating system works, and it is quite easy to accidentally
+make the system unuseable while editing it.&nbsp; If you ever need to manually
+edit the registry settings, or <i>keys</i> (which we do not recommend),
+they can be found under the key <b>HKEY_CURRENT_USER/Software/FlowSimulation</b>.
+<p>If you simply want to get rid of the registry settings, for example
+to start afresh, there is a button on the Options/Data page labelled "Factory
+Setting".&nbsp; This will remove the registry entry and prevent its being
+rewritten when you close down the calculator.&nbsp; You will be warned
+that the registry setting will be deleted - answer "Yes" to this question.&nbsp;
+You should then close the calculator (if it is in the system tray you will
+need to click on its icon and choose Exit).&nbsp; If you continue, any
+further changes you make to the configuration will be lost.&nbsp; If you
+enter the Options dialog again, you will be warned of this.
+<p>The next time you run the calculator, it will have the "factory" settings,
+as if run for the first time.&nbsp; Note that any data in the calculator
+will still be there, because this is stored in a separate file (default.dat).&nbsp;
+Also, if you have added to the properties database and saved in default.dat,
+this will be loaded also.&nbsp; If you want to completely revert to the
+original settings you need to do the following:
+<br>&nbsp;
+<ul>
+<li>
+Delete the registry key as described above</li>
+
+<li>
+Remove the file default.dat from the calculator directory</li>
+
+<li>
+Remove the file default.prp from the calculator directory (if present)</li>
+</ul>
+Note that on some WindowsCE devices files are saved in "My Documents" instead
+of the calculator directory.
+</body>
+</html>

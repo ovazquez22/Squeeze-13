@@ -1,0 +1,58 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.6 [en-gb]C-CCK-MCD NetscapeOnline.co.uk  (Win95; I) [Netscape]">
+   <meta name="Author" content="Bill Ayers">
+   <title>International Versions</title>
+</head>
+<body background="backgrnd.gif">
+
+<h1>
+International Versions</h1>
+
+<p><br>We normally develop software on machines configured to run English
+language versions of Windows.&nbsp; There are one or two issues if you
+are using the software under different versions of Windows or with different
+languages activated.
+<h3>
+Languages and Character Sets</h3>
+Most of the characters we use come from the ASCII character set and these
+are normally consistent whatever code page is used (a code page is used
+to map special language specific characters to the upper 126 characters
+of an 8-bit ANSI character set).&nbsp; However, we have used a few characters
+found in the Latin-1 code page to simulate some of the mathematical symbols
+on the keypad.&nbsp; If you use a code page other than Latin-1 (for example
+Hebrew, Greek or Eastern European) some or all of these characters are
+not available, regardless of whether they exist in the currently selected
+font.
+<p>We have two solutions to this.&nbsp; Depending on the code page you
+are using, the software will change button legends to use available characters.&nbsp;&nbsp;
+This may mean that the legends for the multiply and divide buttons or some
+of the exponential functions may not exactly match the documentation.&nbsp;
+For example the square root button may be labelled "sqrt".
+<p>The Unicode character set removes the problem of mapping code pages
+by having a very large multilingual character set.&nbsp; We have a Unicode
+version for Windows, but Unicode is only supported on WindowsNT (4 and
+higher), Windows2000 and WindowsXP.&nbsp;&nbsp; It is not supported on
+Windows95, 98 or ME.&nbsp; If your operating system supports Unicode you
+can use the Unicode version of the software.&nbsp; You should then be able
+to see all the correct button legends regardless of your language settings
+provided your fonts contain the appropriate glyphs.&nbsp; You may need
+to select an appropriate font, e.g. Arial, for the keypads using the Options/View
+tab.
+<br>&nbsp;
+<h3>
+Decimal and thousands separator symbols</h3>
+You can change the decimal point character from the Options/Display tab.&nbsp;
+When the software is first run, it takes a default value for the decimal
+character depending on your <i>locale</i>.&nbsp; Subsequently it will retain
+whatever value you set it to.&nbsp; If you have previously run the software
+(including an earlier version) the value for the decimal character will
+be retained from this earlier version (from the registry).&nbsp; This may
+mean that you have to set the value manually.
+<p>The thousands separator can also be selected in the same way, but by
+default it is set to "none" so that there is no digit grouping.
+<br>&nbsp;
+</body>
+</html>

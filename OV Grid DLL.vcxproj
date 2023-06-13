@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7C221915-E8D4-48D7-98F2-538CC93E2434}</ProjectGuid>
+    <RootNamespace>OV Grid DLL</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+    <CLRSupport>false</CLRSupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\Release\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</LinkIncremental>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)Src;;$(IncludePath)</IncludePath>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Debug\</OutDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Squeeze 13</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <TargetName>Squeeze Unprotected</TargetName>
+    <IncludePath>$(ProjectDir)Radial;$(ProjectDir);$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Release/OV Grid DLL.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\Release/OV Grid DLL.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release/</AssemblerListingLocation>
+      <ObjectFileName>.\Release/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0809</Culture>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\Release/OV Grid DLL.pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>.\Release/OV Grid DLL.map</MapFileName>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalDependencies>mfc120.lib;mfc120d.lib;mfc120u.lib;mfcs120.lib;mfcs120d.lib;mfcs120u.lib;afxnmcd.lib;afxnmcdd.lib;libcmt.lib;Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release/OV Grid DLL.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Debug/OV Grid DLL.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>Create</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\Debug/OV Grid DLL.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Debug/</AssemblerListingLocation>
+      <ObjectFileName>.\Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug/</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0809</Culture>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\Debug/Squeeze VI.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <AdditionalDependencies>comsupp.lib;comsuppw.lib;ole32.lib;oleaut32.lib;wbemuuid.lib;winhttp.lib;shell32.lib;User32.lib;netapi32.lib;oldnames.lib;Advapi32.lib;Gdi32.lib;ws2_32.lib;legacy_stdio_definitions.lib</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>libcmt.lib</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug/OV Grid DLL.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="res\bitmap1.bmp" />
+    <None Include="res\OV Grid DLL.ico" />
+    <None Include="res\OV Grid DLL.rc2" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Src\AnaliticalLinear.h" />
+    <ClInclude Include="Src\AutoBoxDlg.h" />
+    <ClInclude Include="Src\Basic2Phase.h" />
+    <ClInclude Include="Src\BasicDlg.h" />
+    <ClInclude Include="Src\BitmapEx.h" />
+    <ClInclude Include="Src\BlockerDlg.h" />
+    <ClInclude Include="Src\CaNaDlg.h" />
+    <ClInclude Include="Src\CGraphLine.h" />
+    <ClInclude Include="Src\CheckListBoxGraphs.h" />
+    <ClInclude Include="Src\DiaEdgeConc.h" />
+    <ClInclude Include="Src\EditSingleGrid.h" />
+    <ClInclude Include="Src\FileNotOPenDlg.h" />
+    <ClInclude Include="Src\GraphCtrl.h" />
+    <ClInclude Include="Src\Graphics.h" />
+    <ClInclude Include="Src\GraphicsBlock.h" />
+    <ClInclude Include="Src\GraphParamDlg.h" />
+    <ClInclude Include="Src\GraphXY.h" />
+    <ClInclude Include="Src\HC.h" />
+    <ClInclude Include="Src\IsoMatchParDlg.h" />
+    <ClInclude Include="Src\Isotherm.h" />
+    <ClInclude Include="Src\IsothermDerivationGraph.h" />
+    <ClInclude Include="Src\IsoThermFittingDlg.h" />
+    <ClInclude Include="Src\Iso_Par_Dlg.h" />
+    <ClInclude Include="Src\JobsPool.h" />
+    <ClInclude Include="Src\LayerProperties.h" />
+    <ClInclude Include="Src\Model.h" />
+    <ClInclude Include="Src\MutSolvDlg.h" />
+    <ClInclude Include="Src\OptDlg.h" />
+    <ClInclude Include="Src\Optimization.h" />
+    <ClInclude Include="Src\Opt_Output.h" />
+    <ClInclude Include="Src\OutputTimeDlg.h" />
+    <ClInclude Include="Src\OV Grid DLL.h" />
+    <ClInclude Include="Src\OV Grid DLLDlg.h" />
+    <ClInclude Include="Src\ProgressBar.h" />
+    <ClInclude Include="Src\PropPage1.h" />
+    <ClInclude Include="Src\PropPage2.h" />
+    <ClInclude Include="Src\PropPage3.h" />
+    <ClInclude Include="Src\PropPage4.h" />
+    <ClInclude Include="Src\PropPage5.h" />
+    <ClInclude Include="Src\PropPage7.h" />
+    <ClInclude Include="Src\PSOParallel.h" />
+    <ClInclude Include="Src\random.h" />
+    <ClInclude Include="Src\resource.h" />
+    <ClInclude Include="Src\ReturnableComboBox.h" />
+    <ClInclude Include="Src\ReturnableEdit.h" />
+    <ClInclude Include="Src\RFLayer.h" />
+    <ClInclude Include="Src\Schedule.h" />
+    <ClInclude Include="Src\Sheet.h" />
+    <ClInclude Include="Src\Sim_Running_Dlg.h" />
+    <ClInclude Include="Src\StageDlg.h" />
+    <ClInclude Include="Src\StdAfx.h" />
+    <ClInclude Include="Src\TableGrid.h" />
+    <ClInclude Include="Src\TempDlg.h" />
+    <ClInclude Include="Src\testgrid.h" />
+    <ClInclude Include="Src\Treatment.h" />
+    <ClInclude Include="Src\ViscoDlg.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Src\AnaliticalLinear.cpp" />
+    <ClCompile Include="Src\AutoBoxDlg.cpp" />
+    <ClCompile Include="Src\Basic2Phase.cpp" />
+    <ClCompile Include="Src\BasicDlg.cpp" />
+    <ClCompile Include="Src\BitmapEx.cpp" />
+    <ClCompile Include="Src\BlockerDlg.cpp" />
+    <ClCompile Include="Src\CaNaDlg.cpp" />
+    <ClCompile Include="Src\CGraphLine.cpp" />
+    <ClCompile Include="Src\CheckListBoxGraphs.cpp" />
+    <ClCompile Include="Src\DiaEdgeConc.cpp" />
+    <ClCompile Include="Src\DlgWarning.cpp" />
+    <ClCompile Include="Src\Dlg_Optimisation.cpp" />
+    <ClCompile Include="Src\EditSingleGrid.cpp" />
+    <ClCompile Include="Src\FileNotOPenDlg.cpp" />
+    <ClCompile Include="Src\GraphCtrl.cpp" />
+    <ClCompile Include="Src\Graphics.cpp" />
+    <ClCompile Include="Src\GraphicsBlock.cpp" />
+    <ClCompile Include="Src\GraphParamDlg.cpp" />
+    <ClCompile Include="Src\GraphXY.cpp" />
+    <ClCompile Include="Src\IsoMatchParDlg.cpp" />
+    <ClCompile Include="Src\Isotherm.cpp" />
+    <ClCompile Include="Src\IsothermDerivationGraph.cpp" />
+    <ClCompile Include="Src\IsoThermFittingDlg.cpp" />
+    <ClCompile Include="Src\Iso_Par_Dlg.cpp" />
+    <ClCompile Include="Src\JobsPool.cpp" />
+    <ClCompile Include="Src\Model.cpp" />
+    <ClCompile Include="Src\MutSolvDlg.cpp" />
+    <ClCompile Include="Src\OptDlg.cpp" />
+    <ClCompile Include="Src\Optimization.cpp" />
+    <ClCompile Include="Src\Opt_Output.cpp" />
+    <ClCompile Include="Src\OutputTimeDlg.cpp" />
+    <ClCompile Include="Src\OV Grid DLL.cpp" />
+    <ClCompile Include="Src\ProgressBar.cpp" />
+    <ClCompile Include="Src\PropPage1.cpp" />
+    <ClCompile Include="Src\PropPage2.cpp" />
+    <ClCompile Include="Src\PropPage3.cpp" />
+    <ClCompile Include="Src\PropPage4.cpp" />
+    <ClCompile Include="Src\PropPage5.cpp" />
+    <ClCompile Include="Src\PropPage7.cpp" />
+    <ClCompile Include="Src\PSOParallel.cpp" />
+    <ClCompile Include="Src\ReturnableComboBox.cpp" />
+    <ClCompile Include="Src\ReturnableEdit.cpp" />
+    <ClCompile Include="Src\RFLayer.cpp" />
+    <ClCompile Include="Src\Schedule.cpp" />
+    <ClCompile Include="Src\Sheet.cpp" />
+    <ClCompile Include="Src\Sim_Running_Dlg.cpp" />
+    <ClCompile Include="Src\StageDlg.cpp" />
+    <ClCompile Include="Src\StdAfx.cpp" />
+    <ClCompile Include="Src\TableGrid.cpp" />
+    <ClCompile Include="Src\TempDlg.cpp" />
+    <ClCompile Include="Src\testgrid.cpp" />
+    <ClCompile Include="Src\Treatment.cpp" />
+    <ClCompile Include="Src\ViscoDlg.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="OV Grid DLL.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="OV Grid DLL.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

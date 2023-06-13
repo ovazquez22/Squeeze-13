@@ -1,0 +1,94 @@
+SQZV5.0
+AGM007
+Multi-layer single phase model
+iModel      nEcho       nDebug 
+3           1           1204728     
+nLay	UnitSpec
+7			M
+Rwell(ft/m)		Rmax(ft/m)
+0.1500      3.0000      
+Height(ft/m)		Phi		EffPerm(md or d)
+10.3000     0.0800      3.3000     
+6.0000      0.0500      1.0000     
+7.0000      0.0800      3.3000     
+3.0000      0.0700      6.2000     
+16.3000     0.1000      15.4000    
+13.0000     0.1100      15.0000    
+10.0000     0.0800      2.5000     
+kChem			kTemp
+1           0          
+IsoSpec			TolItr
+0           1.0000e-08
+IsoTyp
+3          
+Neqil2	r2(or r4)(1/day)
+0           0.10000000
+0           0.10000000
+0           0.10000000
+0           0.10000000
+0           0.10000000
+0           0.10000000
+0           0.10000000
+A single isotherm for all layers
+NIso
+22
+Ciso(ppm)    ADiso(mg/L rock)
+5.0000      627.3191   
+8.0000      1045.6928  
+9.5000      1235.5757  
+10.0000     1296.6178  
+18.0000     2196.0759  
+20.0000     2387.4801  
+25.0000     2785.5570  
+32.0000     3261.7879  
+34.0000     3382.4106  
+35.0000     3440.1481  
+37.0000     3547.9015  
+42.0000     3791.5462  
+48.0000     4053.0334  
+55.0000     4331.0761  
+65.0000     4689.6719  
+80.0000     5169.6536  
+100.0000    5745.2823  
+145.0000    6866.7106  
+200.0000    8025.0008  
+310.0000    9987.6738  
+400.0000    11419.7609 
+500.0000    12689.2349 
+nR		Nstages		NIters		Nfreq			NoTstep		IsCon			IsTmp
+30           4          15          10           0           0           0
+Qw(cumpm/cumpd)  tspan(h/d)  dt(h/d)		 CIw(ppm)  TI(degC)    OperCode    nChage	   nOpen	   nMethod
+0.6350       0.7769      0.01000000  	150000.0000  0.0000      1           1           0           0   
+0.6350      1.6      0.01000000  	0.0000       0.0000      2           1           0           0          
+0.0000       12.0000     0.10000000  	0.0000       0.0000      5           1           0           0          
+67.0000      500.0000    0.10000000  	0.0000       0.0000      3           1           0           0          
+nLife       kPlot 
+1           0 
+Clife(ppm) 
+10.0000 
+GrafMic
+10.0000
+kCrange	   kGraf1	   kGraf2	   kGraf3
+0           1           3           0
+nGraf2
+1 	2 	3
+Field Squeeze Return Data 
+nPts 
+0 
+nOlds 
+0 
+Optimisation Parameters 
+nPar          PopSize       Generations   
+3             20            5             
+MIC          TIME/VOL    
+10.0000     365.0000    
+Lower       Upper      
+1.0000      3.0000      
+0.2000      2.0000      
+Qw(bpm/bpd)  tspan(h/d)    CIw(ppm)    TI(degC)    OperCode
+     0.6350         $p0         $p1      0.0000           1 
+	 0.6350         $p2      0.0000      0.0000           2 
+     0.0000     12.0000      0.0000      0.0000           5 
+Sens.Calc(=0 Conv, =1 Ope)     nBins         TotSIVol                       TotInjVol                      Only_SI,=0 y,=1 N              Only_Tot_Vol,=0 y,=1 N         FixedTarget   BinsMT             IterationsSecant  
+0                              20            4.0000      50.0000     0                              0                              1             10              15             
+

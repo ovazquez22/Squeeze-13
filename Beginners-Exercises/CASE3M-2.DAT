@@ -1,0 +1,60 @@
+SQZV5.0
+Case 3s-1 - Modelling a Field ADSORPTION Squeeze Inhibitor
+Multi-layer single phase model
+iModel      nEcho       nDebug 
+3           1           1204664     
+nLay	UnitSpec
+3			C
+Rwell(ft/m)		Rmax(ft/m)
+0.5000      80.0000     
+Height(ft/m)		Phi		EffPerm(md or d)
+20.0000     0.2300      500.0000   
+10.0000     0.1700      300.0000   
+40.0000     0.2500      1200.0000  
+kChem			kTemp
+1           0          
+IsoSpec			TolItr
+0           1.0000e-008
+IsoTyp
+1          
+Neqil2	r2(or r4)(1/day)
+1           0.10000000
+1           0.10000000
+1           0.10000000
+A single isotherm for all layers
+k		n
+501.1000    0.4000     
+nR		Nstages		NIters		Nfreq			NoTstep		IsCon			IsTmp
+40           7          15          10           0           0           0
+Qw(bpm/bpd) tspan(h/d)  dt(h/d)		  CIw(ppm)  TI(degC)    OperCode    nChage	   nOpen	   nMethod
+6.0000       5.0000      0.01000000  	150000.0000  0.0000      1           1           0           0          
+6.0000       12.0000     0.01000000  	0.0000       0.0000      2           1           0           0          
+0.0000       12.0000     0.01000000  	0.0000       0.0000      5           1           0           0          
+6000.0000    90.0000     0.01000000  	0.0000       0.0000      3           1           0           1          
+PIDf
+2000.0000   1000.0000   3000.0000 
+8000.0000    90.0000     0.01000000  	0.0000       20.0000     3           1           0           1          
+PIDf
+2000.0000   1500.0000   4500.0000 
+9000.0000    90.0000     0.01000000  	0.0000       20.0000     3           1           0           1          
+PIDf
+2000.0000   2000.0000   5000.0000 
+10000.0000   90.0000     0.01000000  	0.0000       20.0000     3           1           0           1          
+PIDf
+2000.0000   2500.0000   5500.0000 
+nLife       kPlot 
+2           0 
+Clife(ppm) 
+10.0000     4.5000 
+GrafMic
+4.5000
+kCrange	   kGraf1	   kGraf2	   kGraf3
+0           1           3           0
+nGraf2
+1 	2 	3
+Field Squeeze Return Data 
+nPts 
+0 
+nOlds 
+0 
+

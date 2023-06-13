@@ -1,0 +1,46 @@
+SQZV5.0
+Optimisation Format Input Model
+Isotherm parematers parametrisied
+iModel      nEcho       nDebug
+3 1 1 
+nLay	UnitSpec
+2 C
+Rwell(ft/m)		Rmax(ft/m)
+0.500000 50.000000 
+Height(ft/m)		Phi		EffPerm(md or d)
+20.0000     0.2300      1.0000     
+20.0000     0.2300      1.0000     
+kChem			kTemp
+0           1          
+Ftemp(degC) Kcr(Btu/ft*day*degC)  Kcs   SHr(Btu/lb*degC)  SHw    RHOw(lb/ft3)    RHOr 
+111.0000    	 45.0000     	 45.0000     0.4200      1.8050      62.2380     165.3000   
+nR		Nstages		NIters		Nfreq			NoTstep		IsCon			IsTmp
+30           4          15          10           0           0           0
+Qw(bpm/bpd) tspan(h/d)  dt(h/d)		  CIw(ppm)  TI(degC)    OperCode    nChage	   nOpen	   nMethod
+7.3430      2.4000      0.02400000 	150000.0000 20.0000     1           0           0           0          
+7.3430      21.6000     0.02400000 	0.0000      20.0000     2           0           0           0          
+0.0000      12.0000     0.0240     0.0000      0.0000      5           0           0           0          
+7345.0000   8.0000      0.0020     0.0000      0.0000      3           0           0           0          
+nLife       kPlot 
+1           0 
+Clife(ppm) 
+0.0000 
+kCrange	   kGraf1	   kGraf2	   kGraf3
+-858993460  -858993460  -858993460  -858993460
+Field Squeeze Return Data 
+nPts 
+0 
+nOlds 
+0 
+Optimisation Parameters 
+nData         PopSize       Generations   
+1             20            5             
+MIC          TIME/VOL    
+10.0000     100.0000    
+Parameter   Original    Lower       Upper      
+0           0.0000      0.0000      0.0000      
+Qw(bpm/bpd)  tspan(h/d)  dt(h/d)   CIw(ppm)  TI(degC)	OperCode
+7.3430      2.4000      0.0240      	0.0000      20.0000     1           
+7.3430      21.6000     0.0240      	0.0000      20.0000     2           
+Sens.Calc(=0 Conv, =1 Ope)     nBins         TotSIVol                       TotInjVol                      Only_SI,=0 y,=1 N              Only_Tot_Vol,=0 y,=1 N         FixedTarget   BinsMT             IterationsSecant  
+1                              5             100.0000    1000.0000   1                              1                              1             10              10             

@@ -1,0 +1,425 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.6 [en-gb]C-CCK-MCD NetscapeOnline.co.uk  (Win95; I) [Netscape]">
+   <title>Release Note</title>
+</head>
+<body background="backgrnd.gif">
+
+<h1>
+Calc98 Version 5 Release Note</h1>
+For up-to-date information about the current version see our website at
+<a href="http://www.calculator.org/">http://www.calculator.org/</a>.
+<p>This version contains the following bug fixes and enhancements:
+<br>&nbsp;
+<h2>
+Release 5.29 (Release candidate - public)</h2>
+
+<ul>
+<li>
+WindowsCE version should shut down if insufficient resources - fixed</li>
+
+<li>
+Removed the File/Close command on WindowsCE (WindowsCE UI design guidelines)</li>
+
+<li>
+Better CPU calibration on WindowsCE device</li>
+
+<li>
+Strange behaviour of display array scrollbars on WindowsCE - fixed</li>
+
+<li>
+Confusing behaviour of brackets in certain complex expressions - fixed</li>
+
+<li>
+Changing bracket button legend is unhelpful and breaks UI design guidelines - removed</li>
+
+<li>
+In RPN mode, no warning on stack overflow - fixed</li>
+
+<li>
+In RPN array mode, valid entry sometimes not recognised (so operator does nothing) - fixed</li>
+
+<li>
+WindowsCE installer doesn't warn if try to install CE3 version on CE2 device - fixed</li>
+
+<li>
+Strange display behaviour when initially loading data with different array size from file on WindowsCE - fixed</li>
+
+</ul>
+
+<h2>
+Release 5.28 (Release candidate)</h2>
+
+<ul>
+<li>
+Two's complement display implemented correctly.</li>
+
+<li>
+Negative numbers truncated to zero showed "-0" - fixed.</li>
+
+<li>
+"Clear All" button added to memory select dialog.</li>
+
+<li>
+Some incorrect button legends if enter "opt" while keypad shifted - fixed.</li>
+
+<li>
+Engineering notation displayed 10 as "1e1" - fixed.</li>
+
+<li>
+Select added unit, property or constant when editing properties database.</li>
+
+<li>
+Change time constants (Time in Month etc.) to be in consistent units.</li>
+
+<li>
+Stopwatch timer inaccurate on WindowsCE - fixed.</li>
+
+<li>
+Warn if properties database modified but not saved.</li>
+
+<li>
+Help title bar button removed from Modes property sheet</li>
+
+<li>
+CAB install for WindowsCE devices</li>
+
+<li>
+Spell checked the help files and made corrections</li>
+
+<li>
+Cursor keys control stopwatch in time mode</li>
+
+<li>
+Keyboard accelerator added for RPN stack display</li>
+
+<li>
+Improved tab order on memory dialog to improve keyboard use</li>
+
+<li>
+A button added to the Options/Data page to delete the registry key</li>
+
+<li>
+If property added but no units it was not saved - fixed</li>
+</ul>
+
+<h2>
+Release 5.27 (Release candidate)</h2>
+
+<ul>
+<li>
+Inconsistent behaviour for factorials of very large numbers - fixed</li>
+
+<li>
+Meaningless large values for tangents at infinity - fixed</li>
+
+<li>
+On Unicode versions (e.g. CE) input of angle degrees did not work - fixed</li>
+
+<li>
+Addressed some internationalization problems with non Latin-1 code pages</li>
+
+<li>
+Tool tips not cleared when changing mode e.g. Hex to Bin - fixed</li>
+
+<li>
+Bit wise shift button implemented for baseN, hex, octal, binary modes.</li>
+
+<li>
+Added a Unicode build for WindowsNT, Windows2000, WindowsXP</li>
+
+<li>
+Added number base modes to help files</li>
+
+<li>
+Corrected boiling point of methanol</li>
+
+<li>
+Some fixes to the help files</li>
+
+<li>
+We are now including the full point release in the download filename to
+avoid caching problems</li>
+
+<li>
+A known problem with help files on CE2 devices is addressed in the installation
+instructions</li>
+</ul>
+
+<h2>
+Release 5.26 (Release candidate)</h2>
+
+<ul>
+<li>
+Display invisible on Windows CE 2 if display font is changed - fixed</li>
+
+<li>
+RPN stack roll down does nothing - fixed</li>
+
+<li>
+Percent key not working - fixed</li>
+
+<li>
+Ctrl-X (cut) not working - fixed</li>
+
+<li>
+Periodic table group headings can be misaligned - fixed(?)</li>
+
+<li>
+Decimal and thousands separator now default to Windows locale settings
+when Calc first run</li>
+
+<li>
+In some locales there are problems with key legends - (outstanding problem)</li>
+
+<li>
+Pi button does not push stack correctly in RPN mode - fixed</li>
+
+<li>
+OS Version information was incorrect - fixed</li>
+
+<li>
+Help files updated</li>
+</ul>
+
+<h2>
+Release 5.24 (Beta)</h2>
+
+<ul>
+<li>
+Complex number support</li>
+
+<li>
+More powerful matrix functions</li>
+
+<li>
+Keyboard accelerators changed (to allow use of Ctrl-C and Ctrl-V for copy
+and paste)</li>
+
+<li>
+Roman numeral support</li>
+
+<li>
+Built-in periodic table of the elements</li>
+
+<li>
+WindowsCE platform support</li>
+
+<li>
+Copy and paste work with arrays</li>
+
+<li>
+Memories support arrays</li>
+
+<li>
+Calculator can be minimised to the system tray</li>
+
+<li>
+Calculator can be minimised at start-up (for adding to StartUp directory)</li>
+
+<li>
+Stopwatch functions improved</li>
+
+<li>
+Help works better if no HTML help support and can't find iexplore.exe</li>
+
+<li>
+User can choose browser executable</li>
+
+<li>
+Better HTML Help and help files updated</li>
+
+<li>
+Most calculator functions now support array operation</li>
+
+<li>
+Matrix functions now work in algebraic logic mode</li>
+
+<li>
+Rounding problems fixed</li>
+
+<li>
+Scrolling of arrays is more efficient</li>
+
+<li>
+ASCII table supporting control characters by name</li>
+
+<li>
+Angle mode shown in title bar</li>
+
+<li>
+Starting a second instance of calculator brings existing instance to top</li>
+
+<li>
+Mode dialog re-designed - "Layout" page renamed "View"</li>
+
+<li>
+Keypad configuration now accessed from "View" tab page</li>
+
+<li>
+All dialogs adjusted to support Pocket PC format</li>
+
+<li>
+Added rectangular/polar co-ordinate conversions</li>
+
+<li>
+Quick convert buttons to repeat or reverse last units conversion</li>
+
+<li>
+Extra row of buttons for rapid switching between modes</li>
+
+<li>
+non decimal modes now support full precision</li>
+
+<li>
+User changeable decimal point symbol</li>
+
+<li>
+User changeable thousands separator symbol</li>
+
+<li>
+Added more units and constants (and some corrections)</li>
+
+<li>
+Can navigate to calculator home page from about box</li>
+
+<li>
+Find function in units and constants improved</li>
+
+<li>
+Interest rates can be converted from annual to monthly automatically</li>
+
+<li>
+Two's complement octal and hex modes work properly</li>
+
+<li>
+Percentage calculations now work with addition and subtraction</li>
+
+<li>
+Sexagesimal unwanted roundup problem fixed</li>
+</ul>
+
+<h2>
+Problems fixed in release 4.53:</h2>
+
+<ul>
+<li>
+Re-size and change fonts of buttons</li>
+
+<li>
+Re-arrange orientation of the keypads</li>
+
+<li>
+Re-size calculator and display</li>
+
+<li>
+Display can be expanded to a matrix or array</li>
+
+<li>
+Matrix operators</li>
+
+<li>
+Array arithmetic</li>
+
+<li>
+RPN (Reverse Polish Notation) option</li>
+
+<li>
+Algebraic precedence by default</li>
+
+<li>
+Optional command/menu bar</li>
+
+<li>
+Save/Load calculation data</li>
+
+<li>
+ASCII conversion</li>
+
+<li>
+Engineering number display</li>
+
+<li>
+Keyboard Tootles</li>
+
+<li>
+Full keyboard accelerators (short-cuts)</li>
+
+<li>
+Time mode now includes stopwatch feature</li>
+
+<li>
+Base-N mode (N up to 36)</li>
+
+<li>
+Support for WindowsCE version (not included in the release)</li>
+</ul>
+
+<h2>
+Problems fixed in release 4.52:</h2>
+
+<ul>
+<li>
+"Now" button in time mode displayed UCT (GMT) - now local time</li>
+
+<li>
+Erroneous behaviour of RPN stack fixed</li>
+
+<li>
+Time/angle values were sometimes displayed with 60 seconds</li>
+
+<li>
+Previous window position was restored from registry incorrectly</li>
+
+<li>
+Added capability to store location of browser for Help files</li>
+
+<li>
+Help files moved to a subdirectory</li>
+
+<li>
+Spin box buttons range and direction corrected</li>
+
+<li>
+Constants entered on stack properly in RPN mode</li>
+
+<li>
+Stack viewable in RPN mode</li>
+
+<li>
+Exchange X and Y registers in RPN mode</li>
+
+<li>
+Transcendental function rounding error correction</li>
+
+<li>
+Computes whole number powers of negative numbers</li>
+
+<li>
+Roman numeral mode</li>
+</ul>
+
+<h2>
+Known problems with this release:</h2>
+
+<ul>
+<li>
+Web based automatic property/constant upload not available</li>
+
+<li>
+Memory n dialog box always displays numbers in decimal</li>
+
+<li>
+Help files need updating</li>
+
+<li>
+Installation is still a manual process</li>
+
+<li>
+Help files do not work properly on Windows CE 2</li>
+</ul>
+
+</body>
+</html>

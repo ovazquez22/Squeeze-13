@@ -1,0 +1,2 @@
+rlmutil rlmhostid uuid
+pause

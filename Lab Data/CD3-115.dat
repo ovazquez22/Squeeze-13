@@ -1,0 +1,111 @@
+SQZV6.1
+CD3-115 ConocoPhillips
+Fiord Nechelik, Alaska
+iModel      nEcho       nDebug 
+3           0           0 
+nComp	nLay	UnitSpec
+2		1			C
+Rwell(ft)   Rmax(ft)
+2.9900      20.0000 
+Height(ft)  Phi         EffPerm(md)
+4445.0000   0.1700      1 
+Type			 A			 Alpha			 B		 Beta		 Swc		 Sor		 Swi 
+  0 1.0000      1.0000      1.0000      1.0000      0.0000      0.0000      0.4600      
+MUw       MUo 
+0.4250      0.8900     
+Role(Trac.=0,Inh=1,Visc.=2,Bloc.=3,MutSol.=4) Comp  1
+1
+Role(Trac.=0,Inh=1,Visc.=2,Bloc.=3,MutSol.=4) Comp  2
+4
+NewSwi	NewSor
+0.0000      0.0000      
+Adsorption Alteration
+0
+kChem       kTemp 
+1           0
+MTrans 		 K
+0 		 0.000000
+1 		 0.000050
+IsoSpec	  TolItr
+0           1.0000e-020
+IsoTyp Water Comp 1
+1
+Neqil2	  r2(or r4)(1/day)
+0           0.10000000
+IsoTyp Water Comp 2
+1
+Neqil2	  r2(or r4)(1/day)
+-1          0.10000000
+A single isotherm for all layers
+k           n Water Comp 1
+500.0000    0.3000
+A single isotherm for all layers
+k           n Water Comp 2
+1.0000      1.0000
+IsoTyp Oil Comp 1
+1
+Neqil2	  r2(or r4)(1/day)
+0           0.10000000
+IsoTyp Oil Comp 2
+1
+Neqil2	  r2(or r4)(1/day)
+0           0.10000000
+A single isotherm for all layers
+k           n Oil Comp 1
+1.0000      1.0000
+A single isotherm for all layers
+k           n Oil Comp 2
+1.0000      1.0000
+Well Friction 0 = NO , 1 = YES
+0 
+nR          Nstages     NIters      Nfreq       NoTstep     IsCon       IsTmp       
+30          5           15          10          1           0           0 
+Qw(bpm/bpd) watFrac     tspan(h/d) CIw(ppm)   CIw(ppm)   CIo(ppm)   CIo(ppm)   TI(degC)    OperCode    nChage      nOpen       nMethod    BarPsi     
+1.0300      0.0000      0.2589     	0.0000     	0.0000      0.0000      200000.0000 20.0000     1           0           0           0          
+1.0300      0.0000      1.9900     	0.0000     	0.0000      160000.0000 0.0000      20.0000     1           0           0           0          
+1.0300      0.0000      26.7800    	0.0000     	0.0000      0.0000      0.0000      20.0000     2           0           0           0          
+0.0000      1.0000      12.0000    	0.0000     	0.0000      0.0000      0.0000      20.0000     5           0           0           0          
+3449.0000   1.0000      365.0000   	0.0000     	0.0000      0.0000      0.0000      20.0000     3           0           0           0          
+ProdFw
+0.384000 
+nLife       kPlot 
+0           0 
+GrafMic
+10.0000
+kCrange	   kGraf1	   kGraf2	   kGraf3
+0           0           0           0
+Field Squeeze Return Data 
+nPts 
+0 
+nOlds 
+0 
+Distance Dependent OutputFile 0 = NO, 1 = Yes  
+0
+Time Dependent OutputFile 0 = NO, 1 = Yes  
+1
+bWC bTQw bTQo bTCw bTCo bSIw bSIo bLQw bLQo bCPw bCPo bPw bPo bMass, 0 = NO, 1 = Yes
+  1   0   0   0   0   0   0   0   0   0   0   0   0   0
+Optimization algorithms
+HC = 0, PSO = 1, RCGA = 2, SGA = 3
+1
+Random initial population = 0; HC = 1
+0
+Population
+50
+Length of chromosome
+30
+Generations
+20
+X-over Probability, pcross
+0.600000
+Mutation Probability, pmut
+0.005000
+Misfit type, = 0 Standard, = 1 Natural Logarithm
+1
+Percentage of profile for misfit calculation
+1.000000
+Mod in days 0 = NO, 1 = Yes  
+0 1.000000
+kMax        kmin        nMax        nMin        rMax        rMin       
+3000.00     1.00        1.00        0.00        1.00        0.00       
+

@@ -1,0 +1,113 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.6 [en-gb]C-CCK-MCD NetscapeOnline.co.uk  (Win95; I) [Netscape]">
+   <meta name="Author" content="Bill Ayers">
+   <title>Base-N, Hex, Octal and Binary modes</title>
+</head>
+<body background="backgrnd.gif">
+
+<h1>
+Base-N, Hex, Octal and Binary modes.</h1>
+<img SRC="basen.gif" height=354 width=235>
+<p>For calculations involving binary, octal or hexadecimal arithmetic,
+special modes are used.&nbsp; The calculator is shown in hexadecimal mode.&nbsp;
+These modes support integer arithmetic only.&nbsp;&nbsp; You can quickly
+change between number bases using the last row of buttons on the function
+keypad.&nbsp; <b>Note that earlier versions used four rows of function
+keys and this will be picked up as the default, so you may need to <a href="layout.htm#keypad">explicitly
+set the </a><a href="layout.htm">number of rows to five</a>.</b>
+<p><a NAME="twoscomp"></a>By default, signed numbers are displayed in exactly
+the same way as in decimal mode, with a minus sign.&nbsp; In computing
+and logic design it is more common to work with two's complement numbers.&nbsp;
+To enable two's complement number display use the Options/Display dialog.
+<p><img SRC="optdisp.gif" height=294 width=347>
+<p>The two's complement drop-down list allows you to select the word length.&nbsp;
+Once this is selected, values will be truncated to the selected number
+of bits for display, with leading zeroes added.
+<p><img SRC="twoscomp.gif" height=89 width=109>
+<p>The two's complement setting only affects the displayed value.&nbsp;
+For example, if you keep adding positive values until the value "rolls
+over", the actual accumulated positive number will be stored internally,
+although the display will show the truncated value.&nbsp; However, if you
+switch to decimal mode, or disable two's complement, you will see a large
+positive number, rather than a smaller negative one.&nbsp; For example,
+if an 8-bit word length is selected and the decimal number -2 is entered,
+the value FE will be shown when you convert to hexadecimal.&nbsp; If a
+decimal of 254 is entered and converted to hexadecimal this will also show
+FE, but internally this is a different number.&nbsp; The two's complement
+fixed word length gives you an 8-bit "window" onto the underlying value.
+<p>In octal and binary mode some of the buttons are disabled.&nbsp; The
+button layout for binary mode is shown below, with two's complement and
+16-bit word length:
+<p><img SRC="binary.gif" height=354 width=235>
+<p>For base-n numbers you need to set the number base in Options/Mode.&nbsp;
+This can be any number base between 2 and 36, and the digits are represented
+in the range 0-Z.&nbsp; Once the number base is set, it will be remembered
+whenever Base-n is selected.&nbsp; Setting the number base to ten is useful
+if you need to use some of the number base or bit wise functions while
+working with decimal numbers.
+<p>For number bases up to 16 (hexadecimal) the 0-9 and A-F buttons gradually
+become available as required.&nbsp; Beyond this you need to use some kind
+of keyboard entry to input numbers.&nbsp; The keyboard shortcuts for digits
+are the capital letters.
+<p>Example:
+<p>Using Options/Mode, select mode Base-n and set the number base to 22
+(you could also set it to a higher number).
+<br>Clear the calculator and use the buttons to enter&nbsp;<img SRC="buttons/C.gif" height=23 width=33><img SRC="buttons/A.gif" height=23 width=33>
+:
+<br>&nbsp;
+<table BORDER COLS=1 WIDTH="197" HEIGHT="30" BGCOLOR="#000099" >
+<tr>
+<td><b><font color="#66FFFF">CA</font></b></td>
+</tr>
+</table>
+
+<p>Now use the keyboard to enter L (remembering to use the keyboard shift
+key).
+<br>&nbsp;
+<table BORDER COLS=1 WIDTH="197" HEIGHT="30" BGCOLOR="#000099" >
+<tr>
+<td><b><font color="#66FFFF">CAL</font></b></td>
+</tr>
+</table>
+
+<p>Using the buttons again, enter&nbsp;<img SRC="buttons/C.gif" height=23 width=33><img SRC="buttons/No9.gif" height=30 width=40><img SRC="buttons/No5.gif" height=30 width=40>
+:
+<br>&nbsp;
+<br>&nbsp;
+<table BORDER COLS=1 WIDTH="197" HEIGHT="30" BGCOLOR="#000099" >
+<tr>
+<td><b><font color="#66FFFF">CALC95</font></b></td>
+</tr>
+</table>
+
+<p>Now do some arithmetic in the normal way, e.g.&nbsp;<img SRC="buttons/plus.gif" height=30 width=40><img SRC="buttons/No3.gif" height=30 width=40><img SRC="buttons/equals.gif" height=30 width=40>
+:
+<br>&nbsp;
+<table BORDER COLS=1 WIDTH="197" HEIGHT="30" BGCOLOR="#000099" >
+<tr>
+<td><b><font color="#66FFFF">CALC98</font></b></td>
+</tr>
+</table>
+
+<h3>
+Logical operators</h3>
+Logical AND, OR, XOR and XNOR operators are available.&nbsp; They take
+two operands.&nbsp; There are also unary operators to negate and a NOT
+operator.
+<h3>
+Bit wise shift operators</h3>
+Pressing the shift button converts the left shift button&nbsp;<img SRC="buttons/shiftL.gif" height=23 width=33>
+into right shift&nbsp;<img SRC="buttons/shiftR.gif" height=23 width=33>.&nbsp;
+The shift operator takes two operands - the number to be shifted and the
+number of bits to be shifted by.&nbsp; It is sometimes inconvenient to
+specify the number of shift bits in the same number system as the number
+to be shifted, and you can change number mode during the course of the
+calculation without affecting the result.
+<p>Right shifting a negative number is equivalent to left shifting and
+<i>vice
+versa</i>.
+</body>
+</html>

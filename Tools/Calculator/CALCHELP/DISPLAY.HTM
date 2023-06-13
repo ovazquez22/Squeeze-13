@@ -1,0 +1,121 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.6 [en-gb]C-CCK-MCD NetscapeOnline.co.uk  (Win95; I) [Netscape]">
+   <title>Calculator Display</title>
+</head>
+<body background="backgrnd.gif">
+
+<h2>
+Calculator Display</h2>
+<img SRC="display.gif" ALT="calculator display" >
+<p>The calculator display has a number of built-in features, including
+the ability to show numbers in different modes as defined in the <a href="modes.htm">Mode</a>
+dialog tab, and in different decimal formats. It can also display arrays
+of numbers or matrices, which is further explained in the <a href="matrix.htm">Matrix/Array
+Functions</a> section.
+<h2>
+Setting the Display Options</h2>
+Using the Display page of the Options dialog, you can select the type of
+decimal display - <i>normal</i> (or floating point), <i>fixed point</i>,
+<i>scientific</i>,
+or <i>engineering</i>. You can also choose the number of digits, which
+for <i>scientific</i> means the number of significant figures, and in <i>fixed
+point</i> means the number of digits after the decimal point.
+<p><img SRC="optdisp.gif" ALT="display page" height=294 width=346>
+<p>Note that if you compute a number in <i>fixed point</i> display the
+value is not rounded at each step (i.e. numbers are internally stored to
+the maximum precision available). This can occasionally be a problem in
+financial calculations if the existence of the extra precision is overlooked.
+Be careful not to increase the number of digits too far if the display
+font is large, otherwise there is a danger that significant digits (or
+worse, the exponent!) may be overlooked, particularly in scientific or
+exponent display mode. Digits which are not visible because they lie outside
+the display area can be seen by using the cursor to increase the size of
+the calculator. The display re-sizes itself automatically when the calculator
+window is re-sized.
+<p>Other customizable features of the display are the font and background
+colour. Again, care is needed when changing font, as too large a font at
+higher precision may result in digits falling outside the boundaries of
+the display.&nbsp; On certain devices with limited screen area, such as
+handheld computers, reducing the font size may be the only way to make
+all of the displayed number visible.
+<h3>
+Normal Display Format</h3>
+This is effectively floating point, until the number is too large or too
+small to display as a floating point number given the size of the display,
+at which point the number is presented using Scientific format (i.e. as
+exponent and mantissa).
+<p>For floating point numbers, the Digits edit box specifies the maximum
+total number of digits displayed.
+<h3>
+Fixed Display Format</h3>
+The number is displayed with a fixed number of decimal places, determined
+by the value in the Digits edit box.
+<h3>
+Scientific Display Format</h3>
+In Scientific format a number is displayed as an exponent and a mantissa
+in the range 1.0 to 9.999 (recurring, to the available number of digits).
+(i.e. as exponent and mantissa). The number of significant digits is specified
+by the Digits edit box.
+<h3>
+Engineering Display Format</h3>
+This is the same as Scientific format except the mantissa is adjusted so
+that the exponent is always a multiple of three. e.g. 1.234e5 is displayed
+as "123.4e3". The number of significant digits is specified by the Digits
+edit box.
+<br>The statistics mode is equivalent to decimal mode for the purposes
+of number display.
+<br>&nbsp;
+<h3>
+Display in different modes</h3>
+
+<p><br>When the calculator is in financial number mode, the display format
+is fixed point with two decimal places.
+<p>Angle and Time modes cause the number to be displayed as a sexagesimal
+number.
+<br>&nbsp;
+<h3>
+Decimal Symbol</h3>
+In most English-speaking countries the decimal symbol is the full stop.&nbsp;
+But in many countries a comma is used and the Decimal Symbol drop down
+box allows you to select the appropriate one.&nbsp; You can also use a
+space character.&nbsp; When the calculator is first run the decimal symbol
+will be picked up from the locale you have set for your computer, but this
+can be overridden.&nbsp; If you change your locale, but have already run
+the calculator on this computer, or have run an earlier version, you will
+need to change it manually.
+<h3>
+Digit grouping</h3>
+Groups of three digits, i.e. thousands, can be separated using the Digit
+Group drop down, e.g. "10000.00" can be made to display as "10,000.00".&nbsp;&nbsp;
+A comma, full stop or space character can be used to separate the groups
+of digits, or the feature can be disabled by selecting "no".
+<br>&nbsp;
+<h3>
+Display of non decimal numbers</h3>
+For Binary, Octal, Hexadecimal and Base-N modes, the number is displayed
+in the appropriate format. Fractional parts of numbers are not displayed
+in these modes. The interpretation of signed numbers is determined by the
+state of the Base Signed check box. If checked, negative numbers are displayed
+as signed numbers. If not checked, numbers are displayed as if they were
+unsigned.
+<br>&nbsp;
+<h2>
+Other Display Properties</h2>
+Numbers can be Left, Centre or Right justified within the display (or display
+cell in array mode).
+<p>The colour of the cell background can be changed using the colour well
+(another two on the matrix page are used in array mode). Click on the colour
+well with the mouse to obtain the colour selection dialog. The foreground
+colour is changed as part of the Font dialog which is obtained by pressing
+the <b>Font</b> button. This allows the size, type and colour of the font
+used to be changed.
+<p>The "2's comp" setting is used to control the way in which BaseN, Octal,
+Binary and Hexadecimal numbers are represented, and is described in more
+detail in <a href="basen.htm#twoscomp">that section</a>.
+<p>For information on change the appearance of the grid for arrays, see
+the <a href="matrix.htm">arrays and matrices section</a>.
+</body>
+</html>

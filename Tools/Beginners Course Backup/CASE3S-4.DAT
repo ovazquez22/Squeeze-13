@@ -1,0 +1,55 @@
+SQZV5.0
+Case 3s-4  - Matching a Field PRECIPITATION Squeeze Inhibitor Return
+and Calculating Near-well Reservoir Temperature Profile. 
+iModel      nEcho       nDebug 
+3           1           1220656     
+nLay	UnitSpec
+1			C
+Rwell	Rmax		Height	Phi
+0.5000      20.0000     149.0000    0.2010     
+kChem      kTemp
+1           1          
+IsoTyp		Neqil2		TolItr
+4           1           1.0000e-008
+Cs1		Cs2		Tpc		r4(1/day)
+80.0000     1000000.0000 70.0000     0.1000     
+Ftemp(degC) Kcr(Btu/ft*day*degC)  Kcs   SHr(Btu/lb*degC)  SHw    RHOw(lb/ft3)    RHOr 
+111.0000    	 45.0000     	 45.0000     0.4200      1.8050      62.2380     165.3000   
+nR		Nstages		NIters		Nfreq			NoTstep		IsCon			IsTmp
+15           7          15          10           0           0           0
+Qw(bpm/bpd)  tspan(h/d)  dt(h/d)   CIw(ppm)  TI(degC)	OperCode
+3.0625      0.8160      0.02400000 	100.0000    20.0000     1           
+5.4306      0.3600      0.02400000 	100879.0000 20.0000     1           
+9.6375      1.5120      0.01200000 	0.0000      20.0000     2           
+0.0000      27.0000     0.01200000 	0.0000      0.0000      5           
+4200.0000   47.0000     0.02000000 	0.0000      0.0000      3           
+0.0000      264.0000    0.02000000 	0.0000      0.0000      5           
+4600.0000   39.0000     0.02000000 	0.0000      0.0000      3           
+iAnim	nLife       kPlot 
+1           0           0 
+Field Squeeze Return Data 
+nPts 
+19 
+t(day/1000bbl)  c(ppm) 
+1.3000      295.6000 
+1.5880      586.6000 
+1.8760      5331.6000 
+2.1630      2474.4000 
+2.1920      682.1000 
+4.4650      98.7000 
+5.0410      49.7000 
+5.9040      25.1000 
+7.3430      8.0300 
+8.4940      10.0000 
+19.1420     11.0000 
+25.7600     8.1450 
+33.2420     12.8040 
+42.7390     13.9020 
+47.3430     8.9650 
+67.7770     15.7270 
+76.1200     13.1600 
+82.1630     8.0340 
+87.9190     10.0040 
+nOlds 
+0 
+

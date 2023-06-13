@@ -1,0 +1,45 @@
+RLM Diagnostics at 10/24/2017 14:22 
+
+    RLM version: 12.2BL2-p1
+    RLM platform: x86_w3
+    OS version: 6.1
+
+    ISV name: reprise
+    Hostname: Research229
+    User: oscar_vazquez
+    Working directory: V:\SOFTWARE & TRAINING\SQUEEZE latest version\SQUEEZE 10 Electronic License\Tools\HostID
+
+Environment:
+
+        HTTP_PROXY=<not set>
+        RLM_CONNECT_TIMEOUT=<not set>
+        RLM_EXTENDED_ERROR_MESSAGES=1
+        RLM_LICENSE=<not set>
+        RLM_NO_UNLIMIT=<not set>
+        RLM_PATH_RANDOMIZE=<not set>
+        RLM_PROJECT=<not set>
+        RLM_QUEUE=<not set>
+        RLM_ROAM=<not set>
+        RLMSTAT=<not set>
+
+    RLM hostid list:
+
+        7897baed uuid=86B011F0-53EB-11E6-9C43-BC0000F40000 disksn=61123180CA4F disksn=5Z3028C7 disksn=1Z5ECECS dc4a3e7d414d ip=137.195.74.183 
+
+License files:
+
+rlm_init() parameters:
+        1: .
+        2: .\Exec\rlmutil
+        3: <empty>
+
+Local licenses which can be checked out:
+
+    Client Cached Licenses (only the highest version # shown):
+
+        <none>
+
+
+    Roaming Licenses:
+
+        <none>

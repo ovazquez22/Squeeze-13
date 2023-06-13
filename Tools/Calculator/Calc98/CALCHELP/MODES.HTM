@@ -1,0 +1,141 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.6 [en-gb]C-CCK-MCD NetscapeOnline.co.uk  (Win95; I) [Netscape]">
+   <title>Calculator Modes</title>
+</head>
+<body background="backgrnd.gif">
+
+<h1>
+Number Mode</h1>
+Clicking the&nbsp;<img SRC="buttons/options.gif" ALT="opt" height=23 width=33>
+button brings up the Options dialogue which allows you to change the number
+base of the calculator or select special features, and to customize the
+appearance and behavior of the calculator. The mode dialogue can also be
+invoked by right clicking while the pointer is on the calculator body,
+or selecting Options from either the system menu or the menu/command bar
+(if activated).
+<p><img SRC="optmode.gif" ALT="modes dialog" height=295 width=346>
+<h2>
+Angle</h2>
+Selecting one of the options in the <b>Angle</b> group determines how values
+of angles are interpreted when using the trigonometric functions.
+<h2>
+Mode</h2>
+The <i>Mode</i> selection changes the number base between the many number
+modes available. Changing the Mode alters the legends on buttons which
+have functions specific to different number modes, or disables features
+which are not appropriate. The buttons which fall into this category have
+no legend. The way in which data is displayed also changes between various
+number modes.
+<p>Changing number mode changes the calculator display, but any data stored
+in the calculator is retained. Therefore you can convert between different
+number systems by entering data and then selecting the new number base.
+However, only the decimal system has a decimal point, the other number
+bases work for integers only. Also note that a number in one system will
+require a larger number of digits in a lower number base, which may cause
+an overflow. This is especially likely when converting to binary.
+<p>When converting between different number modes it is sometimes inconvenient
+to keep going to the Mode dialogue. For quick Number Mode changes, either
+use the quick mode buttons on the fifth row of the function keypad, or
+use the accelerator or shortcut keys. These are all obtained by holding
+down Shift and Alt on the keyboard and typing the appropriate letter, i.e.
+D for Decimal, H for Hexadecimal, T for Time, etc. See the listing of <a href="accelmng.htm">keyboard
+accelerators</a>.
+<p>There is a fifth row of function keys which allow you to quickly switch
+between modes.&nbsp;&nbsp; This is especially useful when working in multiple
+number bases.&nbsp; The fifth function keypad row is enabled by default
+when the software is installed but can be removed using the <a href="layout.htm">View</a>
+tab of the options dialogue.&nbsp; <b>Note that earlier versions used four
+rows of function keys and this will be picked up as the default, so you
+may need to <a href="layout.htm#keypad">explicitly set the number of rows
+to five</a></b>.
+<h3>
+Decimal</h3>
+The format for display of decimal numbers is controlled by the <a href="display.htm">Display</a>
+Tab.
+<h3>
+Binary</h3>
+Binary numbers and bit wise logic operators.
+<h3>
+Octal</h3>
+Octal numbers and bit wise logic operators.
+<h3>
+Hexadecimal</h3>
+Hexadecimal numbers and bit wise logic operators.
+<h3>
+Base-N</h3>
+Arbitrary base numbers up to base 36. The base is set by an edit box adjacent
+to the BaseN radio button. For example, using a base of 10 gives decimal
+integers. For bases less than 10 the appropriate numeric buttons are enabled.
+For bases up to 16 (Hexadecimal) the letters A-F become progressively available.
+<p>Beyond base 16 it is not practical to provide buttons for letters, and
+the computer keyboard must be used. The convention is for the upper case
+letter to be used (i.e. shifted letter).
+<p>An interesting example is base 36, where all the decimal digits and
+all the letters of the alphabet are available. In this case, words can
+be encoded and made the subject of computation. This gives interesting
+possibilities for word games and simple ciphers.
+<p>Example:
+<br>GADGET - 3ZS45L = CALC98
+<br>Convert to Decimal:
+<br>743385932
+<h3>
+Statistics</h3>
+Selecting <i>statistics</i> puts the calculator into statistics mode. This
+is the same as <i>decimal</i> mode except that the <b>M+</b> button changes
+to <b>Data</b> for entering data values into the statistics memory. On
+pressing the <b>shift</b> button the <b>AC</b>(All Clear) button and some
+of the number buttons change to show the statistical functions. See the
+section on <a href="stats.htm">Statistics Functions</a> for more information.
+<h3>
+Financial</h3>
+Selecting <i>financial</i> mode enables the financial functions of the
+calculator. This also changes the precision of the display to show two
+decimal places, fixed point. See the section on <a href="finance.htm">Financial
+Functions</a> for more information.
+<h3>
+Angle and Time</h3>
+The Angle and Time modes allow display and input as sexagesimal numbers.
+In Time mode a <a href="misc.htm">stopwatch feature</a> is also available.
+<br>&nbsp;
+<h3>
+Roman</h3>
+Roman numerals can be selected to display integers greater than zero.&nbsp;
+Note that zero is represented by a blank display.&nbsp; It is possible
+to perform calculations in Roman numerals, although in practice it is more
+likely you would want to convert to or from decimal numbers.
+<h2>
+Logic</h2>
+Three types of operator precedence are offered; <i>As Entered</i>,
+<i>Algebraic</i>
+and <i>RPN</i>. In operator precedence the arithmetic operators are evaluated
+exactly in the order they are entered. For example, "1 + 2 * 3" evaluates
+to 9, because "1+2" is evaluated first, to give the result 3, which is
+then multiplied by 3. Simple calculators, typically used for financial
+calculations, often work this way.
+<p>Scientific calculators use algebraic precedence where multiplication
+and division take priority over addition and subtraction, regardless of
+the order in which the expression is presented. In this case "1 + 2 * 3"
+evaluates to 7, because "2*3" is evaluated first, and the result added
+to 1. This is the default precedence for Calc98.
+<p>The single level of built-in algebraic precedence may not be sufficient
+for more complex expressions, and the solution is to use parentheses.
+<p>Users of <a href="rpn.htm">RPN</a> (Reverse Polish Notation) calculators
+are able to perform complex calculations without parentheses because each
+value can be pushed onto a "stack" and the operators applied in order.
+This elegant method was available in early Hewlett-Packard scientific models
+before calculators with parentheses became available. Many of the users
+of these calculators prefer to continue using RPN, so this has been added
+as a third precedence option.
+<p>In <a href="basicrpn.htm">RPN mode</a> some of the button legends and
+behaviour change. In particular, the <b>=</b> button is labelled <b>Enter</b>
+and is used to enter or push a value onto the stack. The <b>Min</b> and
+<b>MR</b>
+buttons become <b>STO</b> and <b>RCL</b> respectively. There are no parenthesis
+buttons, but <b>CLx</b> and <b>REG</b> buttons are provided.
+<br>&nbsp;
+<br>&nbsp;
+</body>
+</html>
